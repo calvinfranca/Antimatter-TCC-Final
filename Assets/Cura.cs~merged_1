@@ -1,0 +1,40 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+<<<<<<< HEAD
+public class Cura : MonoBehaviour
+=======
+public class cura : MonoBehaviour
+>>>>>>> e24dd0400b43cb7cee98f54986d4e94bf5d8b572
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+<<<<<<< HEAD
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+            Destroy(gameObject);
+    }
+
+=======
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+       
+    }
+>>>>>>> e24dd0400b43cb7cee98f54986d4e94bf5d8b572
+}

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 22f6c96312111214f88f57438f8e1a4b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cctrl: {instanceID: 0}
+  - projetil: {instanceID: 0}
+  - especial_dispersao: {instanceID: 0}
+  - cam: {instanceID: 0}
+  - foco: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

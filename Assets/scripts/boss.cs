@@ -1,0 +1,102 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+public class boss : MonoBehaviour
+{
+    public GameObject projetil;
+    public float timer = 1f;
+    public float timer2 = 1f;
+    public float timeratk = 3f;
+    public float wandertime;
+    public float velocidade;
+    public Animator animator;
+
+
+    void Start()
+    {
+        
+        animator.SetBool("Attack", false);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Time.timeScale == 1)
+        {
+            timer -= Time.deltaTime;
+            timer2 -= Time.deltaTime;
+            
+
+            if (wandertime > 0)
+            {
+                transform.Translate(Vector3.forward * velocidade);
+                wandertime -= Time.deltaTime;
+
+
+            }
+            else
+            {
+                timeratk -= Time.deltaTime;
+                animator.SetBool("Attack", true);
+                if (timeratk < 0)
+                {
+                    wandertime = 3.0f;
+                    timeratk = 3f;
+                    animator.SetBool("Attack", false);
+                }
+                
+                //Wander();
+            }
+
+            if (timer2 <= 0.0f && timeratk == 3)
+            {
+                
+                timer2 = 1f;               
+                transform.Rotate(0, 45, 0);
+                
+
+            }
+            if (timer <= 0.0f && wandertime <= 0)
+            {
+                
+                GameObject currentball = Instantiate(projetil, transform.position + transform.forward * 4, projetil.transform.rotation);
+                currentball.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+                transform.Rotate(0, 45, 0);
+                GameObject currentball1 = Instantiate(projetil, transform.position + transform.forward * 4, projetil.transform.rotation);
+                currentball1.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+                transform.Rotate(0, 45, 0);
+                GameObject currentball2 = Instantiate(projetil, transform.position + transform.forward * 4, projetil.transform.rotation);
+                currentball2.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+                transform.Rotate(0, 45, 0);
+                GameObject currentball3 = Instantiate(projetil, transform.position + transform.forward * 4, projetil.transform.rotation);
+                currentball3.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+                transform.Rotate(0, 45, 0);
+                GameObject currentball4 = Instantiate(projetil, transform.position + transform.forward * 4, projetil.transform.rotation);
+                currentball4.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+                transform.Rotate(0, 45, 0);
+                GameObject currentball5 = Instantiate(projetil, transform.position + transform.forward * 4, projetil.transform.rotation);
+                currentball5.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+                transform.Rotate(0, 45, 0);
+                GameObject currentball6 = Instantiate(projetil, transform.position + transform.forward * 4, projetil.transform.rotation);
+                currentball6.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+                transform.Rotate(0, 45, 0);
+                GameObject currentball7 = Instantiate(projetil, transform.position + transform.forward * 4, projetil.transform.rotation);
+                currentball7.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+                transform.Rotate(0, 45, 0);
+
+
+                timer = 1f;
+                
+
+            }
+        }
+    }
+
+    private void Wander()
+    {
+        transform.eulerAngles = new Vector3(0, UnityEngine.Random.Range(0, 360), 0);
+    }
+}
