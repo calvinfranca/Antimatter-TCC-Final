@@ -40,7 +40,7 @@ public class ControleMago : MonoBehaviour
    }
    
    // Update is called once per frame
-   void FixedUpdate()
+   void Update()
    {
         
          
@@ -66,10 +66,10 @@ public class ControleMago : MonoBehaviour
         transform.LookAt(focosemy);
         if (Input.GetButtonDown("Fire1"))
        {
-            GameObject currentball = Instantiate(projetil,transform.position+transform.forward, projetil.transform.rotation);
+            GameObject currentball = Instantiate(projetil, transform.position + transform.forward, projetil.transform.rotation);
             currentball.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
-            
-            
+
+
 
             anim.SetBool("Attack", true);
             Invoke("SetAttackOff", 0.4f);

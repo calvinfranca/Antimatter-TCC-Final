@@ -34,27 +34,27 @@ public class IAbasica : MonoBehaviour
             {
                 GameObject currentball = Instantiate(projetil, transform.position + transform.forward * 2, projetil.transform.rotation);
                 currentball.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
-                transform.Rotate(0, 45, 0);
+                //transform.Rotate(0, 45, 0);
                 GameObject currentball1 = Instantiate(projetil, transform.position + transform.forward * 2, projetil.transform.rotation);
-                currentball1.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
-                transform.Rotate(0, 45, 0);
+                currentball1.GetComponent<Rigidbody>().AddForce(Vector3.Normalize((transform.forward + (transform.right))) * 1000);
+                //transform.Rotate(0, 45, 0);
                 GameObject currentball2 = Instantiate(projetil, transform.position + transform.forward * 2, projetil.transform.rotation);
-                currentball2.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
-                transform.Rotate(0, 45, 0);
+                currentball2.GetComponent<Rigidbody>().AddForce(transform.right * 1000);
+                //transform.Rotate(0, 45, 0);
                 GameObject currentball3 = Instantiate(projetil, transform.position + transform.forward * 2, projetil.transform.rotation);
-                currentball3.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
-                transform.Rotate(0, 45, 0);
+                currentball3.GetComponent<Rigidbody>().AddForce(Vector3.Normalize((-transform.forward + transform.right)) * 1000);
+                //transform.Rotate(0, 45, 0);
                 GameObject currentball4 = Instantiate(projetil, transform.position + transform.forward * 2, projetil.transform.rotation);
-                currentball4.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
-                transform.Rotate(0, 45, 0);
+                currentball4.GetComponent<Rigidbody>().AddForce((-transform.forward) * 1000);
+                //transform.Rotate(0, 45, 0);
                 GameObject currentball5 = Instantiate(projetil, transform.position + transform.forward * 2, projetil.transform.rotation);
-                currentball5.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
-                transform.Rotate(0, 45, 0);
+                currentball5.GetComponent<Rigidbody>().AddForce(Vector3.Normalize((-transform.forward + (-transform.right))) * 1000);
+                //transform.Rotate(0, 45, 0);
                 GameObject currentball6 = Instantiate(projetil, transform.position + transform.forward * 2, projetil.transform.rotation);
-                currentball6.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
-                transform.Rotate(0, 45, 0);
+                currentball6.GetComponent<Rigidbody>().AddForce((-transform.right) * 1000);
+                //transform.Rotate(0, 45, 0);
                 GameObject currentball7 = Instantiate(projetil, transform.position + transform.forward * 2, projetil.transform.rotation);
-                currentball7.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+                currentball7.GetComponent<Rigidbody>().AddForce(Vector3.Normalize(((-transform.right)+ transform.forward)) * 1000);
 
 
 

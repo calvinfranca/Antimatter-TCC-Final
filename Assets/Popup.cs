@@ -35,7 +35,8 @@ public class Popup : MonoBehaviour
         Time.timeScale = 1;
         painel.SetActive(false);
         GetComponent<Collider>().isTrigger = false;
-        
+        GetComponent<Collider>().enabled = false;
+
 
     }
 }

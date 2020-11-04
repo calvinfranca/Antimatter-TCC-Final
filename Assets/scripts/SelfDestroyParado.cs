@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class SelfDestroyParado : MonoBehaviour
 {
+    public float DistanciaTiro;
     void Start()
     {
-        Destroy(gameObject, 1.5f);
+        Destroy(gameObject, DistanciaTiro);
     }
 
     // Update is called once per frame
