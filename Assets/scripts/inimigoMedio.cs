@@ -6,7 +6,7 @@ public class inimigoMedio : MonoBehaviour
 {
     public GameObject projetil;
     public float timer = 1f;
-    public Controle player;
+    public GameObject player;
 
     void Start()
     {

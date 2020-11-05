@@ -17,7 +17,7 @@ public class ControleMago : MonoBehaviour
     public float nextFireEspecial=0;
     public float tempo = 0;
     public float velocidade=16;
-    public float intervaloEspecial;
+    public float intervaloEspecial =0.2f;
     public Animator anim;
     
 

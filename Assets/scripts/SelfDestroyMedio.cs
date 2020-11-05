@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class SelfDestroyMedio : MonoBehaviour
 {
+    public float tempo;
     void Start()
     {
-        Destroy(gameObject, 2);
+        Destroy(gameObject, tempo);
     }
 
     // Update is called once per frame
