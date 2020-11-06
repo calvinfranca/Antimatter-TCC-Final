@@ -5,7 +5,7 @@ using UnityEngine;
 public class TiroTeleguiado : MonoBehaviour
 {
     Rigidbody rdb;
-    private GameObject foco;
+    public GameObject foco;
 
     // Start is called before the first frame update
     void Start()

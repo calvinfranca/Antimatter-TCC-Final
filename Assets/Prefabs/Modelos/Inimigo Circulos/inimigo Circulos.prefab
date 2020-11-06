@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 1346156245643402960}
   - component: {fileID: 2308593646981890752}
   - component: {fileID: 2308593646981890753}
-  - component: {fileID: 4832064407906239086}
+  - component: {fileID: 8143847504298291126}
   m_Layer: 11
   m_Name: inimigo Circulos
   m_TagString: Untagged
@@ -247,7 +247,7 @@ MonoBehaviour:
   player: {fileID: 0}
   barravida: {fileID: 5862030261623119781}
   xp_to_give: 100
---- !u!114 &4832064407906239086
+--- !u!114 &8143847504298291126
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -256,14 +256,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1346156245643402965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e99af4bf212aa7142bc3e0608fe85831, type: 3}
+  m_Script: {fileID: 11500000, guid: c3df4c625847589458205593b49e78bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   projetil: {fileID: 2508387473179452191, guid: 27ae4bb9f9ec5064e804c8871976e134,
     type: 3}
   timer: 1
   timer2: 1
-  velocidade: 0.09
+  velocidade: 0.07
 --- !u!1 &3693819562265333074
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +485,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 138d90989e159614dbc79e6ed8bf87b3,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: -0.00000037252897
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 138d90989e159614dbc79e6ed8bf87b3,
         type: 3}
@@ -495,7 +495,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 138d90989e159614dbc79e6ed8bf87b3,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.00000004470348
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 138d90989e159614dbc79e6ed8bf87b3,
         type: 3}
@@ -510,7 +510,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 138d90989e159614dbc79e6ed8bf87b3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180.00002
+      value: 360
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 138d90989e159614dbc79e6ed8bf87b3,
         type: 3}

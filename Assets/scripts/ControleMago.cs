@@ -26,6 +26,9 @@ public class ControleMago : MonoBehaviour
 
     public Camera cam;
     public GameObject foco;
+    //public TiroTeleguiado tiro;
+    //public GameObject target;
+    
     //private GameObject currentball;
 
 
@@ -43,7 +46,7 @@ public class ControleMago : MonoBehaviour
    void Update()
    {
         
-         
+
         StartTimer();        
         
         anim.SetFloat("Velocidade", cctrl.velocity.magnitude);
@@ -64,15 +67,24 @@ public class ControleMago : MonoBehaviour
 
         Vector3 focosemy = new Vector3(foco.transform.position.x, transform.position.y, foco.transform.position.z);
         transform.LookAt(focosemy);
+
+        
+
         if (Input.GetButtonDown("Fire1"))
        {
-            GameObject currentball = Instantiate(projetil, transform.position + transform.forward, projetil.transform.rotation);
+            
+            GameObject currentball = Instantiate(projetil, transform.position + transform.forward, projetil.transform.rotation);       
             currentball.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
-
-
 
             anim.SetBool("Attack", true);
             Invoke("SetAttackOff", 0.4f);
+            
+            
+            
+            
+
+
+            
 
         }
         
@@ -100,6 +112,7 @@ public class ControleMago : MonoBehaviour
         }
 
     }
+    
     void StartTimer()
     {
         tempo -= Time.deltaTime;
