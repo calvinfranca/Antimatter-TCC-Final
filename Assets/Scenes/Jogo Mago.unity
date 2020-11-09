@@ -31073,6 +31073,17 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1623499868}
+    - target: {fileID: 6244715623597431669, guid: c01e770c243357c46bec951d299e4829,
+        type: 3}
+      propertyPath: projetil
+      value: 
+      objectReference: {fileID: 1577450177662456420, guid: bcf7b5460421f2d4e956e70249e0a0ef,
+        type: 3}
+    - target: {fileID: 6244715623597431669, guid: c01e770c243357c46bec951d299e4829,
+        type: 3}
+      propertyPath: bombForce
+      value: 10000
+      objectReference: {fileID: 0}
     - target: {fileID: 6244715624371838579, guid: c01e770c243357c46bec951d299e4829,
         type: 3}
       propertyPath: vidamaxima

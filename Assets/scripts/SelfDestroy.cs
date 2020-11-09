@@ -5,10 +5,12 @@ using UnityEngine;
 public class SelfDestroy : MonoBehaviour
 {
     public float duracao;
+    public GameObject anim;
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, (float)duracao);
+        Destroy(gameObject, duracao);
+        Invoke("AnimarExplosao", duracao-0.01f);
     }
 
     // Update is called once per frame
@@ -22,6 +24,13 @@ public class SelfDestroy : MonoBehaviour
         if (!collision.gameObject.CompareTag("Bala"))
         {
             Destroy(gameObject);
+            
+            AnimarExplosao();
+            CancelInvoke();
         }
+    }
+    public void AnimarExplosao()
+    {
+        Instantiate(anim, transform.position, transform.rotation);
     }
 }

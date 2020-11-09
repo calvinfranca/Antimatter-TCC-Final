@@ -97,9 +97,7 @@ public class ControleMago : MonoBehaviour
 
                 Invoke("EspecialLoop", 0);
 
-                Invoke("EspecialLoop", intervaloEspecial);
-
-                Invoke("EspecialLoop", intervaloEspecial*2);
+                
 
 
 
@@ -122,17 +120,11 @@ public class ControleMago : MonoBehaviour
 
     private void EspecialLoop()
     {
-        GameObject currentespecial = Instantiate(especial_dispersao, transform.position + transform.forward , especial_dispersao.transform.rotation);
+        GameObject currentespecial = Instantiate(especial_dispersao, transform.position + (transform.forward*2f) + (transform.up*2f) , transform.rotation);
         currentespecial.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
         ///transform.Rotate(0, 22, 0);
 
-        GameObject currentespecial1 = Instantiate(especial_dispersao, transform.position + transform.forward, especial_dispersao.transform.rotation);
-        currentespecial1.GetComponent<Rigidbody>().AddForce((transform.forward+(transform.right*0.5f)) * 1000);
-        //transform.Rotate(0, -44, 0);
-
-        GameObject currentespecial2 = Instantiate(especial_dispersao, transform.position + transform.forward, especial_dispersao.transform.rotation);
-        currentespecial2.GetComponent<Rigidbody>().AddForce((transform.forward-(transform.right*0.5f)) * 1000);
-        //transform.Rotate(0, 22, 0);
+        
     }
 
     public void UpVelocidade()

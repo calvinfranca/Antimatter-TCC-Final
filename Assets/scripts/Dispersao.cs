@@ -29,8 +29,8 @@ public class Dispersao : MonoBehaviour
             {
                 if (hit.rigidbody)
                 {
-                    hit.rigidbody.isKinematic = false;
-                    //hit.rigidbody.AddExplosionForce(bombForce, transform.position, 10);
+                    //hit.rigidbody.isKinematic = false;
+                    hit.rigidbody.AddExplosionForce(bombForce, transform.position, 10);
                     
                 }
             }
@@ -52,8 +52,8 @@ public class Dispersao : MonoBehaviour
                 {
                     if (hit.rigidbody)
                     {
-                        hit.rigidbody.isKinematic = false;
-                        //hit.rigidbody.AddExplosionForce(bombForce, transform.position, 10);
+                        //hit.rigidbody.isKinematic = false;
+                        hit.rigidbody.AddExplosionForce(bombForce, transform.position, 10);
 
                     }
                 }
