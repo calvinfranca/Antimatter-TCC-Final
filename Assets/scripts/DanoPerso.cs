@@ -65,6 +65,12 @@ public class DanoPerso : MonoBehaviour
 
         vidamaxima += 10;
         vidaatual = vidamaxima;
+        barravida.SetVida(vidaatual);
+    }
+    public void CasaCura()
+    {
+        vidaatual = vidamaxima;
+        barravida.SetVida(vidaatual);
     }
 
 
