@@ -9,6 +9,7 @@ public class Popup : MonoBehaviour
     public Text textoNPC;
     public string texto;
     public GameObject painel;
+    public GameObject paineldesativar;
     void Start()
     {
 
@@ -26,7 +27,7 @@ public class Popup : MonoBehaviour
             Time.timeScale = 0;
             textoNPC.text = texto;
             painel.SetActive(true);
-
+            paineldesativar.SetActive(false);
         };
 
     }
@@ -34,6 +35,7 @@ public class Popup : MonoBehaviour
     {
         Time.timeScale = 1;
         painel.SetActive(false);
+        paineldesativar.SetActive(true);
         GetComponent<Collider>().isTrigger = false;
         GetComponent<Collider>().enabled = false;
 

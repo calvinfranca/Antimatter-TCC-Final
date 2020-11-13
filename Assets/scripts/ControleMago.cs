@@ -121,7 +121,7 @@ public class ControleMago : MonoBehaviour
     private void EspecialLoop()
     {
         GameObject currentespecial = Instantiate(especial_dispersao, transform.position + (transform.forward*2f) + (transform.up*2f) , transform.rotation);
-        currentespecial.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+        currentespecial.GetComponent<Rigidbody>().AddForce(transform.forward * 10000);
         ///transform.Rotate(0, 22, 0);
 
         
