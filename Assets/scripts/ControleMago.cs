@@ -71,13 +71,13 @@ public class ControleMago : MonoBehaviour
         
 
         if (Input.GetButtonDown("Fire1"))
-       {
+        {
             
             GameObject currentball = Instantiate(projetil, transform.position + transform.forward, projetil.transform.rotation);       
             currentball.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
 
             anim.SetBool("Attack", true);
-            Invoke("SetAttackOff", 0.4f);
+            Invoke("SetAttackOff", 0.1f);
             
             
             

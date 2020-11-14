@@ -9,6 +9,7 @@ public class Dialogo : MonoBehaviour
     public Text textoNPC;
     public string texto;
     public GameObject painel;
+    public GameObject paineldesativar;
     void Start()
     {
         
@@ -26,6 +27,7 @@ public class Dialogo : MonoBehaviour
             Time.timeScale = 0;
             textoNPC.text = texto;
             painel.SetActive(true);
+            paineldesativar.SetActive(false);
 
         };
         
@@ -35,7 +37,9 @@ public class Dialogo : MonoBehaviour
         Time.timeScale = 1;
         painel.SetActive(false);
         GetComponent<Collider>().isTrigger = false;
-        Invoke("RearmTrigger", 5);
+
+        paineldesativar.SetActive(true);
+        Invoke("RearmTrigger", 2);
 
     }
     void RearmTrigger()
