@@ -8,6 +8,7 @@ public class PlayerLevelSystem : MonoBehaviour
     public Level level;
     public GameObject panel;
     public Slider slider;
+    public Text textoXP;
     
     public int lvlvida=1;
     public int lvldano=1;
@@ -15,9 +16,11 @@ public class PlayerLevelSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        slider.minValue = 0;
         level = new Level(1, OnLevelUp);
         panel.SetActive(false);
+        textoXP.text = "0 / " + level.GetXPforLevel(level.currentLevel+1);
+        print(level.GetXPforLevel(level.currentLevel + 1));
     }
 
     public void OnLevelUp()
@@ -30,7 +33,9 @@ public class PlayerLevelSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //FillValue();
+        textoXP.text = "0 / " + level.GetXPforLevel(level.currentLevel + 1).ToString();
+        print(level.GetXPforLevel(level.currentLevel + 1));
+        FillValue();
 
 
     }
@@ -72,13 +77,15 @@ public class PlayerLevelSystem : MonoBehaviour
         }
 
     }
-    //public void FillValue()
-    //{
-    //    slider.minValue = 1;
-    //    slider.maxValue = level.GetXPforLevel(level.currentLevel);
-    //    slider.value = level.experience;
-    //    
-    //}
+    public void FillValue()
+    {
+        
+        slider.maxValue = level.GetXPforLevel(level.currentLevel);
+        slider.value = level.experience;
+        textoXP.text = "0 / " + level.GetXPforLevel(level.currentLevel);
+
+
+    }
 
 
 }
