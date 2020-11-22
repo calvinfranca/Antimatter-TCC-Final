@@ -1163,6 +1163,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   fill: {fileID: 4668133697583061212}
+  texto: {fileID: 0}
 --- !u!1 &6564998985846953249
 GameObject:
   m_ObjectHideFlags: 0
