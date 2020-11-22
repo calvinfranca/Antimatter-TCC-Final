@@ -33,15 +33,15 @@ public class InimigoCluster : MonoBehaviour
 
             if (timer <= 0.0f)
             {
-                GameObject currentball = Instantiate(projetil, transform.position + transform.forward *  3, projetil.transform.rotation);
+                GameObject currentball = Instantiate(projetil, transform.position + transform.forward , projetil.transform.rotation);
                 currentball.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);                
                 transform.Rotate(0, 23, 0);                                                              
                                                                                                          
-                GameObject currentball1 = Instantiate(projetil, transform.position + transform.forward * 3, projetil.transform.rotation);
+                GameObject currentball1 = Instantiate(projetil, transform.position + transform.forward , projetil.transform.rotation);
                 currentball1.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);               
                 transform.Rotate(0, -46, 0);                                                              
                                                                                                          
-                GameObject currentball2 = Instantiate(projetil, transform.position + transform.forward * 3, projetil.transform.rotation);
+                GameObject currentball2 = Instantiate(projetil, transform.position + transform.forward , projetil.transform.rotation);
                 currentball2.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
                 transform.Rotate(0, 23, 0);
 
