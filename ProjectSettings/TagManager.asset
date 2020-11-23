@@ -8,6 +8,7 @@ TagManager:
   - Boss
   - Bomba
   - Cura
+  - Escudo
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - Player
   - Tiro Inimigo
   - Cura
-  - 
+  - Escudo
   - 
   - 
   - 

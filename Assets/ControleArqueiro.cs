@@ -2,20 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControleCavaleiro : MonoBehaviour
+public class ControleArqueiro : MonoBehaviour
 {
+
+
 
     Vector3 playeraxis;
     public CharacterController cctrl;
     public GameObject projetil;
-    
+    public GameObject especial_dispersao;
     public float cooldown = 10;
     public float nextFireEspecial = 0;
     public float tempo = 0;
     public float velocidade = 16;
-    public float intervaloEspecial = 0.2f;
+    public float intervaloEspecial;
     public Animator anim;
-    public GameObject escudo;
 
 
 
@@ -23,11 +24,6 @@ public class ControleCavaleiro : MonoBehaviour
 
     public Camera cam;
     public GameObject foco;
-    //public TiroTeleguiado tiro;
-    //public GameObject target;
-
-    //private GameObject currentball;
-
 
     Vector2 mousePos;
 
@@ -64,27 +60,15 @@ public class ControleCavaleiro : MonoBehaviour
 
         Vector3 focosemy = new Vector3(foco.transform.position.x, transform.position.y, foco.transform.position.z);
         transform.LookAt(focosemy);
-
-
-
         if (Input.GetButtonDown("Fire1"))
         {
-
             GameObject currentball = Instantiate(projetil, transform.position + transform.forward, transform.rotation);
             currentball.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
 
             anim.SetBool("Attack", true);
             Invoke("SetAttackOff", 0.3f);
 
-
-
-
-
-
-
-
         }
-
 
 
         if (Time.time > nextFireEspecial)
@@ -94,15 +78,21 @@ public class ControleCavaleiro : MonoBehaviour
 
                 Invoke("EspecialLoop", 0);
 
+                Invoke("EspecialLoop", intervaloEspecial);
+
+                Invoke("EspecialLoop", intervaloEspecial * 2);
+
+
 
                 nextFireEspecial = Time.time + cooldown;
                 tempo = 10f;
+
+
 
             }
         }
 
     }
-
     void StartTimer()
     {
         tempo -= Time.deltaTime;
@@ -112,12 +102,17 @@ public class ControleCavaleiro : MonoBehaviour
 
     private void EspecialLoop()
     {
-        escudo.SetActive(true);
-        Invoke("DesativarEscudo", 5);
-
+        GameObject currentespecial = Instantiate(especial_dispersao, transform.position + transform.forward, especial_dispersao.transform.rotation);
+        currentespecial.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
         ///transform.Rotate(0, 22, 0);
 
+        GameObject currentespecial1 = Instantiate(especial_dispersao, transform.position + transform.forward, especial_dispersao.transform.rotation);
+        currentespecial1.GetComponent<Rigidbody>().AddForce((transform.forward + (transform.right * 0.5f)) * 1000);
+        //transform.Rotate(0, -44, 0);
 
+        GameObject currentespecial2 = Instantiate(especial_dispersao, transform.position + transform.forward, especial_dispersao.transform.rotation);
+        currentespecial2.GetComponent<Rigidbody>().AddForce((transform.forward - (transform.right * 0.5f)) * 1000);
+        //transform.Rotate(0, 22, 0);
     }
 
     public void UpVelocidade()
@@ -132,9 +127,5 @@ public class ControleCavaleiro : MonoBehaviour
     public void SetAttackOff()
     {
         anim.SetBool("Attack", false);
-    }
-    public void DesativarEscudo()
-    {
-        escudo.SetActive(false);
     }
 }
