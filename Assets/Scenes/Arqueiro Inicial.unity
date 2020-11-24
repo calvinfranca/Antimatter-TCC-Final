@@ -8348,6 +8348,11 @@ PrefabInstance:
       propertyPath: textoXP
       value: 
       objectReference: {fileID: 1843711085}
+    - target: {fileID: 8462832251566420297, guid: 2eebd9cd4186c9f4fa5937ac93db809f,
+        type: 3}
+      propertyPath: paneldesativar
+      value: 
+      objectReference: {fileID: 896876878}
     - target: {fileID: 8462832251566420298, guid: 2eebd9cd4186c9f4fa5937ac93db809f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8492,6 +8497,11 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 667604439}
+    - target: {fileID: 9156954104251463896, guid: 1936951fd728caf439c2b77c8c9a4d0f,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 6895991454913911305}
     m_RemovedComponents:
     - {fileID: 2598443898051581633, guid: 1936951fd728caf439c2b77c8c9a4d0f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1936951fd728caf439c2b77c8c9a4d0f, type: 3}

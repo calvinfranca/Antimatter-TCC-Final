@@ -7,6 +7,7 @@ public class PlayerLevelSystem : MonoBehaviour
 {
     public Level level;
     public GameObject panel;
+    public GameObject paneldesativar;
     public Slider slider;
     public Text textoXP;
     
@@ -41,6 +42,7 @@ public class PlayerLevelSystem : MonoBehaviour
     public void OnLevelUp()
     {
         panel.SetActive(true);
+        paneldesativar.SetActive(false);
         print("xp " + level.currentLevel);
         print("vMax " + (level.currentLevel +1));
         Time.timeScale = 0;
@@ -69,6 +71,7 @@ public class PlayerLevelSystem : MonoBehaviour
     {
         Time.timeScale = 1;
         panel.SetActive(false);
+        paneldesativar.SetActive(true);
     }
 
     public void LvlDano()
