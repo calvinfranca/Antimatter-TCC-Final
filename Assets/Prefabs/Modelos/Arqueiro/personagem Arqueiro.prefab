@@ -86,7 +86,6 @@ GameObject:
   - component: {fileID: 5636773782014078203}
   - component: {fileID: 5636773782014078204}
   - component: {fileID: 1083410245899240681}
-  - component: {fileID: 1083410245899240684}
   - component: {fileID: 3224670040093748481}
   m_Layer: 12
   m_Name: personagem Arqueiro
@@ -192,29 +191,6 @@ MonoBehaviour:
   vidamaxima: 50
   vidaatual: 50
   barravida: {fileID: 0}
---- !u!114 &1083410245899240684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5636773782014078206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0e186a3d2013e84caddd7531cca12f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level:
-    experience: 0
-    currentLevel: 0
-    MAX_EXP: 0
-    MAX_LEVEL: 0
-  panel: {fileID: 0}
-  slider: {fileID: 0}
-  textoXP: {fileID: 0}
-  lvlvida: 1
-  lvldano: 1
-  lvlmovSpeed: 1
 --- !u!114 &3224670040093748481
 MonoBehaviour:
   m_ObjectHideFlags: 0

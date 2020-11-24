@@ -102,15 +102,15 @@ public class ControleArqueiro : MonoBehaviour
 
     private void EspecialLoop()
     {
-        GameObject currentespecial = Instantiate(especial_dispersao, transform.position + transform.forward, especial_dispersao.transform.rotation);
+        GameObject currentespecial = Instantiate(especial_dispersao, transform.position + transform.forward, transform.rotation);
         currentespecial.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
         ///transform.Rotate(0, 22, 0);
 
-        GameObject currentespecial1 = Instantiate(especial_dispersao, transform.position + transform.forward, especial_dispersao.transform.rotation);
+        GameObject currentespecial1 = Instantiate(especial_dispersao, transform.position + transform.forward, transform.rotation);
         currentespecial1.GetComponent<Rigidbody>().AddForce((transform.forward + (transform.right * 0.5f)) * 1000);
         //transform.Rotate(0, -44, 0);
 
-        GameObject currentespecial2 = Instantiate(especial_dispersao, transform.position + transform.forward, especial_dispersao.transform.rotation);
+        GameObject currentespecial2 = Instantiate(especial_dispersao, transform.position + transform.forward, transform.rotation);
         currentespecial2.GetComponent<Rigidbody>().AddForce((transform.forward - (transform.right * 0.5f)) * 1000);
         //transform.Rotate(0, 22, 0);
     }

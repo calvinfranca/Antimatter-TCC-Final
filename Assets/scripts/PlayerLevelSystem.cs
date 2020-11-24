@@ -13,6 +13,21 @@ public class PlayerLevelSystem : MonoBehaviour
     public int lvlvida=1;
     public int lvldano=1;
     public int lvlmovSpeed=1;
+
+    public static PlayerLevelSystem instance;
+
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+        DontDestroyOnLoad(gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +35,7 @@ public class PlayerLevelSystem : MonoBehaviour
         level = new Level(1, OnLevelUp);
         panel.SetActive(false);
         textoXP.text = "0 / " + level.GetXPforLevel(level.currentLevel+1);
-        print(level.GetXPforLevel(level.currentLevel + 1));
+        
     }
 
     public void OnLevelUp()
@@ -33,9 +48,13 @@ public class PlayerLevelSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textoXP.text = "0 / " + level.GetXPforLevel(level.currentLevel + 1).ToString();
-        print(level.GetXPforLevel(level.currentLevel + 1));
-        FillValue();
+        textoXP.text = level.experience + " / " + level.GetXPforLevel(level.currentLevel+1);
+        print(level.GetXPforLevel(level.currentLevel+1));
+
+        slider.maxValue = level.GetXPforLevel(level.currentLevel+1);
+        slider.value = level.experience;
+        print(slider.value);
+        //FillValue();
 
 
     }
@@ -82,7 +101,7 @@ public class PlayerLevelSystem : MonoBehaviour
         
         slider.maxValue = level.GetXPforLevel(level.currentLevel);
         slider.value = level.experience;
-        textoXP.text = "0 / " + level.GetXPforLevel(level.currentLevel);
+        
 
 
     }

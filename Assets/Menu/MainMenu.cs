@@ -6,17 +6,17 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     // Start is called before the first frame update
-    public void PlayArcher ()
+    public void ArqInicial ()
     {
         SceneManager.LoadScene("Jogo Arqueiro");
     }
 
-    public void PlayKnight()
+    public void CavInicial()
     {
         SceneManager.LoadScene("Jogo Cavaleiro");
     }
 
-    public void PlayMage()
+    public void MagoInicial()
     {
         SceneManager.LoadScene("Jogo Mago");
     }
@@ -30,5 +30,13 @@ public class MainMenu : MonoBehaviour
     public void GoToMainMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+    public void MagoCidade()
+    {
+        SceneManager.LoadScene("Cidade Mago");
+    }
+    public void ArqCidade()
+    {
+        SceneManager.LoadScene("Cidade Arq");
     }
 }
