@@ -8,17 +8,17 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     public void ArqInicial ()
     {
-        SceneManager.LoadScene("Jogo Arqueiro");
+        SceneManager.LoadScene("Arqueiro Inicial");
     }
 
     public void CavInicial()
     {
-        SceneManager.LoadScene("Jogo Cavaleiro");
+        SceneManager.LoadScene("Cavaleiro Inicial");
     }
 
     public void MagoInicial()
     {
-        SceneManager.LoadScene("Jogo Mago");
+        SceneManager.LoadScene("Mago Inicial");
     }
 
     public void QuitGame()
@@ -33,10 +33,27 @@ public class MainMenu : MonoBehaviour
     }
     public void MagoCidade()
     {
-        SceneManager.LoadScene("Cidade Mago");
+        SceneManager.LoadScene("Mago Cidade");
     }
     public void ArqCidade()
     {
-        SceneManager.LoadScene("Cidade Arq");
+        SceneManager.LoadScene("Arq Cidade");
     }
+    public void CavCidade()
+    {
+        SceneManager.LoadScene("Cav Cidade");
+    }
+    public void MagoFinal()
+    {
+        SceneManager.LoadScene("Mago Final");
+    }
+    public void ArqFinal()
+    {
+        SceneManager.LoadScene("Arq Final");
+    }
+    public void CavFinal()
+    {
+        SceneManager.LoadScene("Cav Final");
+    }
+
 }
