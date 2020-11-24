@@ -2113,7 +2113,8 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.5905e-41, y: 0, z: 0, w: NaN}
+  m_BoundingSphereOverride: {x: 1.0899094e+27, y: 8.319519e+35, z: 0.00000000233163,
+    w: 0.000950339}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -6593,17 +6594,17 @@ PrefabInstance:
     - target: {fileID: 1971392892804953942, guid: 39c0666f98391ce49aec286a9e0dd8e6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 57
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1971392892804953942, guid: 39c0666f98391ce49aec286a9e0dd8e6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -449.25
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 1971392893120321435, guid: 39c0666f98391ce49aec286a9e0dd8e6,
         type: 3}
       propertyPath: m_Text
-      value: Bola de Fogo
+      value: Mortar
       objectReference: {fileID: 0}
     - target: {fileID: 1971392893120321435, guid: 39c0666f98391ce49aec286a9e0dd8e6,
         type: 3}
@@ -6730,11 +6731,37 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1971392893723729302, guid: 39c0666f98391ce49aec286a9e0dd8e6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -251.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1971392893723729302, guid: 39c0666f98391ce49aec286a9e0dd8e6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 740.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1971392893723729302, guid: 39c0666f98391ce49aec286a9e0dd8e6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 116.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 1971392893723729302, guid: 39c0666f98391ce49aec286a9e0dd8e6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 251.45
+      objectReference: {fileID: 0}
     - target: {fileID: 5014568630212224491, guid: 39c0666f98391ce49aec286a9e0dd8e6,
         type: 3}
       propertyPath: control
       value: 
       objectReference: {fileID: 4697496318883441625}
+    - target: {fileID: 6401512880526275650, guid: 39c0666f98391ce49aec286a9e0dd8e6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cf6478ef684ce7f4c830edba147c7607,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39c0666f98391ce49aec286a9e0dd8e6, type: 3}
 --- !u!1001 &3936435297552432240
@@ -7067,6 +7094,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319144343235076006, guid: 58bd3ee44432cec48a44c2833d8d2de4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -16.699951
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319144343235076006, guid: 58bd3ee44432cec48a44c2833d8d2de4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 11.299988
       objectReference: {fileID: 0}
     - target: {fileID: 4319144343270897470, guid: 58bd3ee44432cec48a44c2833d8d2de4,
         type: 3}
