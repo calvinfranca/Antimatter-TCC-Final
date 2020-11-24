@@ -697,7 +697,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 989526245}
-        m_MethodName: PlayMage
+        m_MethodName: ArqCidade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

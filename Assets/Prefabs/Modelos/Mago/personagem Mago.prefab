@@ -336,6 +336,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   fill: {fileID: 3425167204791894132}
+  texto: {fileID: 0}
 --- !u!1 &1700517626049672804
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,7 +350,6 @@ GameObject:
   - component: {fileID: 1700517626049672801}
   - component: {fileID: 1700517626049672806}
   - component: {fileID: 6244715624371838579}
-  - component: {fileID: 6244715624371838582}
   - component: {fileID: 6244715623597431669}
   m_Layer: 12
   m_Name: personagem Mago
@@ -456,28 +456,6 @@ MonoBehaviour:
   vidamaxima: 50
   vidaatual: 50
   barravida: {fileID: 2758188746799869689}
---- !u!114 &6244715624371838582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700517626049672804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0e186a3d2013e84caddd7531cca12f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level:
-    experience: 0
-    currentLevel: 0
-    MAX_EXP: 0
-    MAX_LEVEL: 0
-  panel: {fileID: 0}
-  slider: {fileID: 0}
-  lvlvida: 1
-  lvldano: 1
-  lvlmovSpeed: 1
 --- !u!114 &6244715623597431669
 MonoBehaviour:
   m_ObjectHideFlags: 0
