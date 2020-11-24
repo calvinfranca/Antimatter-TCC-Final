@@ -29,9 +29,9 @@ public class TextoLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        txtAtual.text = "Lvl " + level.level.currentLevel;
-        txtProximo.text = "Lvl " + (level.level.currentLevel+1);
-        txtParabens.text = "Parabéns, você subiu para o Level " + level.level.currentLevel + " !";
+        txtAtual.text = level.level.currentLevel.ToString();
+        txtProximo.text = (level.level.currentLevel+1).ToString();
+        txtParabens.text = level.level.currentLevel.ToString();
 
         sliderDano.value = level.lvldano;
         sliderVida.value = level.lvlvida;

@@ -7231,11 +7231,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 341430281, guid: 39c0666f98391ce49aec286a9e0dd8e6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -527.4
       objectReference: {fileID: 0}
     - target: {fileID: 341430281, guid: 39c0666f98391ce49aec286a9e0dd8e6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 139.2002
+      value: 983
       objectReference: {fileID: 0}
     - target: {fileID: 341430283, guid: 39c0666f98391ce49aec286a9e0dd8e6, type: 3}
       propertyPath: m_WholeNumbers
@@ -7969,7 +7969,7 @@ PrefabInstance:
     - target: {fileID: 4319144342771752812, guid: 58bd3ee44432cec48a44c2833d8d2de4,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4319144342836089658, guid: 58bd3ee44432cec48a44c2833d8d2de4,
         type: 3}
