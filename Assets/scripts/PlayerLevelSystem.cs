@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerLevelSystem : MonoBehaviour
+public  class PlayerLevelSystem :MonoBehaviour
 {
     public Level level;
     public GameObject panel;
@@ -11,9 +11,9 @@ public class PlayerLevelSystem : MonoBehaviour
     public Slider slider;
     public Text textoXP;
     
-    public int lvlvida=1;
-    public int lvldano=1;
-    public int lvlmovSpeed=1;
+    public int lvlvida =1;
+    public int lvldano =1;
+    public int lvlmovSpeed =1;
 
     public static PlayerLevelSystem instance;
 
@@ -30,7 +30,7 @@ public class PlayerLevelSystem : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+     void Start()
     {
         slider.minValue = 0;
         level = new Level(1, OnLevelUp);
@@ -43,19 +43,19 @@ public class PlayerLevelSystem : MonoBehaviour
     {
         panel.SetActive(true);
         paneldesativar.SetActive(false);
-        print("xp " + level.currentLevel);
-        print("vMax " + (level.currentLevel +1));
+        //print("xp " + level.currentLevel);
+        //print("vMax " + (level.currentLevel +1));
         Time.timeScale = 0;
     }
     // Update is called once per frame
     void Update()
     {
         textoXP.text = level.experience + " / " + level.GetXPforLevel(level.currentLevel+1);
-        print(level.GetXPforLevel(level.currentLevel+1));
+        //print(level.GetXPforLevel(level.currentLevel+1));
 
         slider.maxValue = level.GetXPforLevel(level.currentLevel+1);
         slider.value = level.experience;
-        print(slider.value);
+        //print(slider.value);
         //FillValue();
 
 
@@ -67,14 +67,14 @@ public class PlayerLevelSystem : MonoBehaviour
     }
    
 
-    public void ExitText()
+    public   void ExitText()
     {
         Time.timeScale = 1;
         panel.SetActive(false);
         paneldesativar.SetActive(true);
     }
 
-    public void LvlDano()
+    public  void LvlDano()
     {
         if(lvldano <= 5)
         {
@@ -83,7 +83,7 @@ public class PlayerLevelSystem : MonoBehaviour
 
     }
 
-    public void LvlVida()
+    public  void LvlVida()
     {
         if (lvlvida <= 5)
         {
@@ -91,7 +91,7 @@ public class PlayerLevelSystem : MonoBehaviour
         }
 
     }
-    public void LvlMovSpeed()
+    public  void LvlMovSpeed()
     {
         if (lvlmovSpeed <= 5)
         {
@@ -99,7 +99,7 @@ public class PlayerLevelSystem : MonoBehaviour
         }
 
     }
-    public void FillValue()
+    public  void FillValue()
     {
         
         slider.maxValue = level.GetXPforLevel(level.currentLevel);
