@@ -10,9 +10,13 @@ public class boss : MonoBehaviour
     public float timer = 1f;
     public float timer2 = 1f;
     public float timeratk = 3f;
+    public float timersnipe = 0.4f;
     public float wandertime;
     public float velocidade;
     public Animator animator;
+    public GameObject player;
+
+    //public GameObject rot;
 
 
     void Start()
@@ -34,6 +38,23 @@ public class boss : MonoBehaviour
             {
                 transform.Translate(Vector3.forward * velocidade);
                 wandertime -= Time.deltaTime;
+                timersnipe -= Time.deltaTime;
+
+                Quaternion rot = gameObject.transform.rotation;
+                //Vector3 pos = transform.position;
+                transform.LookAt(player.transform);
+
+                if (timersnipe <= 0)
+                {
+                    GameObject currentball = Instantiate(projetil, transform.position + transform.forward * 4, projetil.transform.rotation);
+                    currentball.GetComponent<Rigidbody>().AddForce(transform.forward * 1500);
+                    timersnipe = 0.4f;
+                }
+                
+
+                gameObject.transform.rotation = rot;
+                //transform.LookAt(pos);
+
 
 
             }

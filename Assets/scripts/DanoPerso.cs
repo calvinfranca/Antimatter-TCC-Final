@@ -12,7 +12,7 @@ public class DanoPerso : MonoBehaviour
     public int dano;   
     public int vidamaxima;
     public int vidaatual;
-
+    Scene cena;
     public BarraVida barravida;
 
 
@@ -26,10 +26,11 @@ public class DanoPerso : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        cena = SceneManager.GetActiveScene();
         if (vidaatual <= 0)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("Derrota");
+            SceneManager.LoadScene(cena.buildIndex + 1);
         }
         
         
