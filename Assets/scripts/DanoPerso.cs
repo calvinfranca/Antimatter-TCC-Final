@@ -26,10 +26,11 @@ public class DanoPerso : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cena = SceneManager.GetActiveScene();
+        
         if (vidaatual <= 0)
         {
             Destroy(gameObject);
+            cena = SceneManager.GetActiveScene();
             SceneManager.LoadScene(cena.buildIndex + 1);
         }
         
