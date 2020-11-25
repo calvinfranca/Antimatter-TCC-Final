@@ -30,6 +30,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Vitorias/Mago Ini Vitoria.unity
     guid: ba7c143636554b84a99299b2153e5ee8
   - enabled: 1
+    path: Assets/Scenes/Inicial/Mago Inicial.unity
+    guid: b94ac296a5a3fc741ab2ab86abb837b2
+  - enabled: 1
+    path: Assets/Scenes/Derrotas/Mago Ini Derrota.unity
+    guid: 2dab7fae9deef4440bede0c9d42f218e
+  - enabled: 1
     path: Assets/Scenes/Cidade/Cidade Mago.unity
     guid: 7a6a8090ff61dec489a90abfa95b9ee0
   - enabled: 1

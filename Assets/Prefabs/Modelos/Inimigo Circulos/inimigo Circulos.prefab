@@ -262,7 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projetil: {fileID: 2508387473179452191, guid: 27ae4bb9f9ec5064e804c8871976e134,
     type: 3}
-  timer: 1
+  timer: 1.2
   timer2: 1
   velocidade: 0.07
 --- !u!1 &3693819562265333074

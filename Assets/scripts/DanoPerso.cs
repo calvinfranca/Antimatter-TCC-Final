@@ -29,9 +29,11 @@ public class DanoPerso : MonoBehaviour
         
         if (vidaatual <= 0)
         {
-            Destroy(gameObject);
             cena = SceneManager.GetActiveScene();
             SceneManager.LoadScene(cena.buildIndex + 1);
+            Destroy(gameObject);
+            
+            
         }
         
         

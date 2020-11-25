@@ -6,14 +6,14 @@ public class InimigoMovel : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject projetil;
-    public float timer = 1.0f;
+    public float timer;
     public float timer2 = 1f;
     public float velocidade = 0.007f;
 
 
     void Start()
     {
-
+        //timer = 1.2f;
     }
 
     // Update is called once per frame
