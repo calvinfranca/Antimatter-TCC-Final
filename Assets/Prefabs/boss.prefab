@@ -1256,7 +1256,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6564998985846953249}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1
@@ -1278,9 +1278,11 @@ MonoBehaviour:
   timer: 1
   timer2: 1
   timeratk: 3
+  timersnipe: 0.4
   wandertime: 3
-  velocidade: 0.2
+  velocidade: 0.3
   animator: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &9156954104251463899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1297,7 +1299,10 @@ MonoBehaviour:
   danoEspecial: 60
   vidamaxima: 200
   vidaatual: 200
+  mortefx: {fileID: 0}
+  xp_to_give: 150
   barravida: {fileID: 1796675962229249105}
+  player: {fileID: 0}
 --- !u!1 &6929203269011021897
 GameObject:
   m_ObjectHideFlags: 0

@@ -41,12 +41,12 @@ public class DanoPerso : MonoBehaviour
 
    
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Bala"))
-            Dano(dano);
-
-    }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Bala"))
+    //        Dano(dano);
+    //
+    //}
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Cura"))
@@ -55,7 +55,9 @@ public class DanoPerso : MonoBehaviour
             barravida.VidaMaxima(vidaatual);
             
         }
-          
+        if (other.gameObject.CompareTag("Tiro Inimigo"))
+            Dano(dano);
+
     }
     public void Dano(int xDmg)
     {

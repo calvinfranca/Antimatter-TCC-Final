@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
 
     public void CavInicial()
     {
-        SceneManager.LoadScene("Cavaleiro Inicial");
+        SceneManager.LoadScene("Cav Inicial");
     }
 
     public void MagoInicial()

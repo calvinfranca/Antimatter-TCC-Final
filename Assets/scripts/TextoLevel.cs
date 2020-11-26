@@ -18,7 +18,7 @@ public class TextoLevel : MonoBehaviour
     public Button btVida;
     public Button btMovSpeed;
 
-    public PlayerLevelSystem level;
+    //public PlayerLevelSystem level;
 
     // Start is called before the first frame update
     void Start()
@@ -29,8 +29,8 @@ public class TextoLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        txtAtual.text = XpManager.level.currentLevel.ToString();
-        txtProximo.text = (XpManager.level.currentLevel+1).ToString();
+        //txtAtual.text = XpManager.level.currentLevel.ToString();
+        //txtProximo.text = (XpManager.level.currentLevel+1).ToString();
         txtParabens.text = XpManager.level.currentLevel.ToString();
 
         sliderDano.value = XpManager.lvldano;

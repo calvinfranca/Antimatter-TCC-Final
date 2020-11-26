@@ -9,6 +9,7 @@ TagManager:
   - Bomba
   - Cura
   - Escudo
+  - Tiro Inimigo
   layers:
   - Default
   - TransparentFX

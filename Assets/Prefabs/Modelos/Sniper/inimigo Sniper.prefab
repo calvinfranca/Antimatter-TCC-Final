@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b18236e5a03e8914dbd331081dc57e49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projetil: {fileID: 5360606552206181746, guid: 5d724620de4cac34ca8851187ebfe208,
+  projetil: {fileID: 2508387473179452191, guid: 7d32a83c18c903c44a136987f367f528,
     type: 3}
   timer: 1
   player: {fileID: 0}

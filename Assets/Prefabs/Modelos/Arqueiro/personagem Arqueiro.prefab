@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 5636773782014078204}
   - component: {fileID: 1083410245899240681}
   - component: {fileID: 3224670040093748481}
+  - component: {fileID: 3679995393694151141}
   m_Layer: 12
   m_Name: personagem Arqueiro
   m_TagString: Player
@@ -215,6 +216,20 @@ MonoBehaviour:
   cam: {fileID: 0}
   foco: {fileID: 0}
   bombForce: 1000
+--- !u!136 &3679995393694151141
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5636773782014078206}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6155451462013934494
 GameObject:
   m_ObjectHideFlags: 0
