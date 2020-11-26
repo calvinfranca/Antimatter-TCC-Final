@@ -29,13 +29,13 @@ public class TextoLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        txtAtual.text = level.level.currentLevel.ToString();
-        txtProximo.text = (level.level.currentLevel+1).ToString();
-        txtParabens.text = level.level.currentLevel.ToString();
+        txtAtual.text = XpManager.level.currentLevel.ToString();
+        txtProximo.text = (XpManager.level.currentLevel+1).ToString();
+        txtParabens.text = XpManager.level.currentLevel.ToString();
 
-        sliderDano.value = level.lvldano;
-        sliderVida.value = level.lvlvida;
-        sliderMovSpeed.value = level.lvlmovSpeed;
+        sliderDano.value = XpManager.lvldano;
+        sliderVida.value = XpManager.lvlvida;
+        sliderMovSpeed.value = XpManager.lvlmovSpeed;
         
         if (sliderVida.value >= 5)
         {            

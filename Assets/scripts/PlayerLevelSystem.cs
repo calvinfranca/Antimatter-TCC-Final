@@ -5,16 +5,14 @@ using UnityEngine.UI;
 
 public  class PlayerLevelSystem :MonoBehaviour
 {
-    public Level level;
+    
     public GameObject panel;
     public GameObject paneldesativar;
     public Slider slider;
-    public Text textoXP;
+    //public Text textoXP;
     
-    public int lvlvida =1;
-    public int lvldano =1;
-    public int lvlmovSpeed =1;
-
+    
+    
     public static PlayerLevelSystem instance;
 
     void Awake()
@@ -32,10 +30,15 @@ public  class PlayerLevelSystem :MonoBehaviour
     // Start is called before the first frame update
      void Start()
     {
-        slider.minValue = 0;
-        level = new Level(1, OnLevelUp);
+        
+        if(XpManager.level == null)
+        {
+            XpManager.level = new Level(1, OnLevelUp);
+        }
+        
+        
         panel.SetActive(false);
-        textoXP.text = "0 / " + level.GetXPforLevel(level.currentLevel+1);
+        //textoXP.text = "0 / " + XpManager.level.GetXPforLevel(XpManager.level.currentLevel+1);
         
     }
 
@@ -50,11 +53,23 @@ public  class PlayerLevelSystem :MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textoXP.text = level.experience + " / " + level.GetXPforLevel(level.currentLevel+1);
+        if(slider == null)
+        {
+            slider = GameObject.Find("XP slider").GetComponent<Slider>();           
+
+            panel = GameObject.Find("PainelLevelUp");
+            panel.gameObject.SetActive(false);
+
+            paneldesativar = GameObject.Find("UI Tela");
+
+            slider.minValue = 0;
+
+        }
+        //textoXP.text = XpManager.level.experience + " / " + XpManager.level.GetXPforLevel(XpManager.level.currentLevel+1);
         //print(level.GetXPforLevel(level.currentLevel+1));
 
-        slider.maxValue = level.GetXPforLevel(level.currentLevel+1);
-        slider.value = level.experience;
+        slider.maxValue = XpManager.level.GetXPforLevel(XpManager.level.currentLevel+1);
+        slider.value = XpManager.level.experience;
         //print(slider.value);
         //FillValue();
 
@@ -63,7 +78,7 @@ public  class PlayerLevelSystem :MonoBehaviour
 
     public void XPTrigger(int xp)
     {
-        level.AddExp(xp);
+        XpManager.level.AddExp(xp);
     }
    
 
@@ -76,34 +91,34 @@ public  class PlayerLevelSystem :MonoBehaviour
 
     public  void LvlDano()
     {
-        if(lvldano <= 5)
+        if(XpManager.lvldano <= 5)
         {
-            lvldano += 1;
+            XpManager.lvldano += 1;
         }           
 
     }
 
     public  void LvlVida()
     {
-        if (lvlvida <= 5)
+        if (XpManager.lvlvida <= 5)
         {
-            lvlvida += 1;
+            XpManager.lvlvida += 1;
         }
 
     }
     public  void LvlMovSpeed()
     {
-        if (lvlmovSpeed <= 5)
+        if (XpManager.lvlmovSpeed <= 5)
         {
-            lvlmovSpeed += 1;
+            XpManager.lvlmovSpeed += 1;
         }
 
     }
     public  void FillValue()
     {
         
-        slider.maxValue = level.GetXPforLevel(level.currentLevel);
-        slider.value = level.experience;
+        slider.maxValue = XpManager.level.GetXPforLevel(XpManager.level.currentLevel);
+        slider.value = XpManager.level.experience;
         
 
 

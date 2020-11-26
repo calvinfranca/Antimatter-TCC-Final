@@ -15,6 +15,7 @@ public class boss : MonoBehaviour
     public float velocidade;
     public Animator animator;
     public GameObject player;
+    
 
     //public GameObject rot;
 

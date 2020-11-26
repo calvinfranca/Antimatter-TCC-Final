@@ -14,8 +14,9 @@ public class DanoVidaBoss : MonoBehaviour
     public int vidamaxima;
     public int vidaatual;
     public GameObject mortefx;
-
+    public int xp_to_give;
     public BarraVida barravida;
+    public PlayerLevelSystem player;
 
 
 
@@ -30,6 +31,7 @@ public class DanoVidaBoss : MonoBehaviour
     {
         if (vidaatual <= 0)
         {
+            player.SendMessage("XPTrigger", xp_to_give);
             mortefx.transform.position = transform.position;
             mortefx.transform.rotation = transform.rotation;
             mortefx.SetActive(true);

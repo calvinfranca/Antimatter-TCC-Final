@@ -101,6 +101,11 @@ PrefabInstance:
       propertyPath: lengthInSec
       value: 2.49
       objectReference: {fileID: 0}
+    - target: {fileID: 198041415873647910, guid: 2a2762eb559a5e24cb94e81034b36a34,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 198059991218745886, guid: 2a2762eb559a5e24cb94e81034b36a34,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -115,6 +120,11 @@ PrefabInstance:
         type: 3}
       propertyPath: lengthInSec
       value: 2.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 198059991218745886, guid: 2a2762eb559a5e24cb94e81034b36a34,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 198140898611670382, guid: 2a2762eb559a5e24cb94e81034b36a34,
         type: 3}
@@ -141,6 +151,11 @@ PrefabInstance:
       propertyPath: lengthInSec
       value: 2.49
       objectReference: {fileID: 0}
+    - target: {fileID: 198181104141240334, guid: 2a2762eb559a5e24cb94e81034b36a34,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 198216682267822166, guid: 2a2762eb559a5e24cb94e81034b36a34,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -155,6 +170,11 @@ PrefabInstance:
         type: 3}
       propertyPath: lengthInSec
       value: 2.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 198216682267822166, guid: 2a2762eb559a5e24cb94e81034b36a34,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 198279495855881254, guid: 2a2762eb559a5e24cb94e81034b36a34,
         type: 3}
@@ -246,6 +266,11 @@ PrefabInstance:
       propertyPath: lengthInSec
       value: 2.49
       objectReference: {fileID: 0}
+    - target: {fileID: 198289654986556520, guid: 2a2762eb559a5e24cb94e81034b36a34,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 198313640795591846, guid: 2a2762eb559a5e24cb94e81034b36a34,
         type: 3}
       propertyPath: looping
@@ -306,6 +331,11 @@ PrefabInstance:
       propertyPath: lengthInSec
       value: 2.49
       objectReference: {fileID: 0}
+    - target: {fileID: 198545554231581764, guid: 2a2762eb559a5e24cb94e81034b36a34,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 198715319605565730, guid: 2a2762eb559a5e24cb94e81034b36a34,
         type: 3}
       propertyPath: looping
@@ -330,6 +360,11 @@ PrefabInstance:
         type: 3}
       propertyPath: lengthInSec
       value: 2.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 198891198393950516, guid: 2a2762eb559a5e24cb94e81034b36a34,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 198984295687106778, guid: 2a2762eb559a5e24cb94e81034b36a34,
         type: 3}
@@ -365,6 +400,11 @@ PrefabInstance:
         type: 3}
       propertyPath: lengthInSec
       value: 2.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 198998459721677058, guid: 2a2762eb559a5e24cb94e81034b36a34,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a2762eb559a5e24cb94e81034b36a34, type: 3}

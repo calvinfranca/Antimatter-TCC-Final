@@ -15,11 +15,15 @@ public class DanoVida : MonoBehaviour
     public PlayerLevelSystem player;
     public BarraVida barravida;
     public int xp_to_give;
+    public DelegateDano delegatedano;
 
 
 
     void Start()
     {
+        delegatedano = DelegateDano.instance;
+        delegatedano.aumentaDano += UpDano;
+
         vidaatual = vidamaxima;
         barravida.VidaMaxima(vidamaxima);
     }
@@ -31,10 +35,11 @@ public class DanoVida : MonoBehaviour
         {
             if(player != null)
             {
+
                 player.SendMessage("XPTrigger", xp_to_give);
             }
 
-            
+            delegatedano.aumentaDano -= UpDano;
             Destroy(gameObject);
         };
         
