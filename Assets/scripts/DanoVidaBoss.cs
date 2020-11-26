@@ -13,6 +13,7 @@ public class DanoVidaBoss : MonoBehaviour
     public int danoEspecial;
     public int vidamaxima;
     public int vidaatual;
+    public GameObject mortefx;
 
     public BarraVida barravida;
 
@@ -29,6 +30,9 @@ public class DanoVidaBoss : MonoBehaviour
     {
         if (vidaatual <= 0)
         {
+            mortefx.transform.position = transform.position;
+            mortefx.transform.rotation = transform.rotation;
+            mortefx.SetActive(true);
             Destroy(gameObject);
         //    SceneManager.LoadScene("Vitoria");
         };
