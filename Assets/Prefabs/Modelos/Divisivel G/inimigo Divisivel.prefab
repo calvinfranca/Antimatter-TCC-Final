@@ -302,7 +302,8 @@ MonoBehaviour:
   player: {fileID: 0}
   barravida: {fileID: 7470125357263258594}
   xp_to_give: 50
-  subInimigo: {fileID: 2621002490275807890}
+  subInimigo: {fileID: 1673325273736829163, guid: 63124ad086a426f49b23b284d87cf50e,
+    type: 3}
 --- !u!114 &5291935614820651899
 MonoBehaviour:
   m_ObjectHideFlags: 0
