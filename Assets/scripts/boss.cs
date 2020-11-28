@@ -7,6 +7,7 @@ using UnityEngine;
 public class boss : MonoBehaviour
 {
     public GameObject projetil;
+    public GameObject sniper;
     public float timer = 1f;
     public float timer2 = 1f;
     public float timeratk = 3f;
@@ -47,7 +48,7 @@ public class boss : MonoBehaviour
 
                 if (timersnipe <= 0)
                 {
-                    GameObject currentball = Instantiate(projetil, transform.position + transform.forward * 4, projetil.transform.rotation);
+                    GameObject currentball = Instantiate(sniper, transform.position + transform.forward * 4, sniper.transform.rotation);
                     currentball.GetComponent<Rigidbody>().AddForce(transform.forward * 1500);
                     timersnipe = 0.4f;
                 }

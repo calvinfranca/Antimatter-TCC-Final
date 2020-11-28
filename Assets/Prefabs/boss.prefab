@@ -1273,8 +1273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27cd2446a2de68f4099a97d5c31876f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projetil: {fileID: 9061192138482149813, guid: f865bfd822d95dd4bbefef38f62a281c,
+  projetil: {fileID: 9061192138482149813, guid: 8c173c1356aace04eb6494bad0b33992,
     type: 3}
+  sniper: {fileID: 9061192138482149813, guid: f865bfd822d95dd4bbefef38f62a281c, type: 3}
   timer: 1
   timer2: 1
   timeratk: 3

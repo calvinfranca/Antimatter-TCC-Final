@@ -1880,6 +1880,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: Icone Especial
       objectReference: {fileID: 0}
+    - target: {fileID: 5278665197175684908, guid: 39c0666f98391ce49aec286a9e0dd8e6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 427.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278665197175684908, guid: 39c0666f98391ce49aec286a9e0dd8e6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 199.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278665197175684908, guid: 39c0666f98391ce49aec286a9e0dd8e6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -860.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278665197175684908, guid: 39c0666f98391ce49aec286a9e0dd8e6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 240.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521517726885396345, guid: 39c0666f98391ce49aec286a9e0dd8e6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8d75bd274e44d8147acbe8f35237575c,
+        type: 3}
     - target: {fileID: 6223932224394864685, guid: 39c0666f98391ce49aec286a9e0dd8e6,
         type: 3}
       propertyPath: m_AnchorMax.x

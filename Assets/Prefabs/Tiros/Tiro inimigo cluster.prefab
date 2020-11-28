@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 3941947544013326339}
   - component: {fileID: 6709930474397137746}
   - component: {fileID: 4147571078989180186}
-  - component: {fileID: 4865622239020213604}
+  - component: {fileID: 8228134627219933263}
   m_Layer: 13
-  m_Name: Tiro inimigo Sniper
+  m_Name: Tiro inimigo cluster
   m_TagString: Tiro Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,12 +108,12 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4865622239020213604
+--- !u!114 &8228134627219933263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,10 +122,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2508387473179452191}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 552ebc3a85a591349968bec1e3aeb69f, type: 3}
+  m_Script: {fileID: 11500000, guid: ef1a7cc8f2af9e446baebb9a8575e183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DistanciaTiro: 1
+  tempo: 0.6
+  subtiro: {fileID: 2508387473179452191, guid: 27ae4bb9f9ec5064e804c8871976e134, type: 3}
 --- !u!1 &7766422422956395388
 GameObject:
   m_ObjectHideFlags: 0
@@ -5448,6 +5449,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560196217604433871, guid: 11de4cd5de4b4a74cb2fbba988a0aaa4,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.03899296
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560196217604433871, guid: 11de4cd5de4b4a74cb2fbba988a0aaa4,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560196217604433871, guid: 11de4cd5de4b4a74cb2fbba988a0aaa4,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.004405493
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11de4cd5de4b4a74cb2fbba988a0aaa4, type: 3}

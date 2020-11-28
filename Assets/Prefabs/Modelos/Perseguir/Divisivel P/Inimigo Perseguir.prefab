@@ -226,7 +226,7 @@ MonoBehaviour:
   distIniciar: 15
   distParar: 2
   agent: {fileID: 1673325273736829165}
-  projetil: {fileID: 2508387473179452191, guid: 27ae4bb9f9ec5064e804c8871976e134,
+  projetil: {fileID: 2508387473179452191, guid: bfd162e0c8c191743b839d345dd37989,
     type: 3}
   timer: 1
 --- !u!114 &3990464355023693050
@@ -248,6 +248,7 @@ MonoBehaviour:
   player: {fileID: 0}
   barravida: {fileID: 7362249489752416777}
   xp_to_give: 50
+  delegatedano: {fileID: 0}
 --- !u!1 &5616713060173753889
 GameObject:
   m_ObjectHideFlags: 0

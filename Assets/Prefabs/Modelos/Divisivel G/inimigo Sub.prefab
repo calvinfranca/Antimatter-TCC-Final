@@ -434,6 +434,7 @@ MonoBehaviour:
   player: {fileID: 0}
   barravida: {fileID: 4028260722698276533}
   xp_to_give: 10
+  delegatedano: {fileID: 0}
 --- !u!114 &4855323297694210080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,7 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a0c974ef5333b147990642794968136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projetil: {fileID: 2508387473179452191, guid: 27ae4bb9f9ec5064e804c8871976e134,
+  projetil: {fileID: 2508387473179452191, guid: 7829970a1c838d644af6d51a6ff7e89d,
     type: 3}
   timer: 1
   timer2: 1
