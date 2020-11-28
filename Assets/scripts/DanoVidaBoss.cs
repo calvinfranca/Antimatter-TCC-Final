@@ -36,7 +36,7 @@ public class DanoVidaBoss : MonoBehaviour
             mortefx.transform.rotation = transform.rotation;
             mortefx.SetActive(true);
             Destroy(gameObject);
-        //    SceneManager.LoadScene("Vitoria");
+       
         };
         
         
