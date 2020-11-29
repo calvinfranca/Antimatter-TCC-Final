@@ -4017,7 +4017,7 @@ PrefabInstance:
     - target: {fileID: 3636699984401945829, guid: 28b5241515994514ead91bc0283e51f2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -406.37
+      value: -409.68
       objectReference: {fileID: 0}
     - target: {fileID: 3636699984401945829, guid: 28b5241515994514ead91bc0283e51f2,
         type: 3}
@@ -7581,7 +7581,7 @@ PrefabInstance:
     - target: {fileID: 6564998985846953254, guid: 1936951fd728caf439c2b77c8c9a4d0f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -229.9
+      value: -233.6
       objectReference: {fileID: 0}
     - target: {fileID: 6564998985846953254, guid: 1936951fd728caf439c2b77c8c9a4d0f,
         type: 3}
@@ -7643,6 +7643,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 941726325}
+    - target: {fileID: 9156954104251463896, guid: 1936951fd728caf439c2b77c8c9a4d0f,
+        type: 3}
+      propertyPath: velocidade
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 9156954104251463899, guid: 1936951fd728caf439c2b77c8c9a4d0f,
         type: 3}
       propertyPath: mortefx

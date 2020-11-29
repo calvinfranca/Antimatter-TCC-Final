@@ -21,7 +21,8 @@ public class SelfDestroy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!collision.gameObject.CompareTag("Bala") && !collision.gameObject.CompareTag("Escudo"))
+        if (!collision.gameObject.CompareTag("Bala") && !collision.gameObject.CompareTag("Escudo") 
+            && !collision.gameObject.CompareTag("Tiro Inimigo") && !collision.gameObject.CompareTag("Tiro Boss"))
         {
             Destroy(gameObject);
             

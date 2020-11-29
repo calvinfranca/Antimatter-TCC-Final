@@ -8317,6 +8317,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7619188431303657780, guid: 1936951fd728caf439c2b77c8c9a4d0f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9156954104251463896, guid: 1936951fd728caf439c2b77c8c9a4d0f,
         type: 3}
       propertyPath: animator
@@ -8327,6 +8332,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2133653957}
+    - target: {fileID: 9156954104251463896, guid: 1936951fd728caf439c2b77c8c9a4d0f,
+        type: 3}
+      propertyPath: velocidade
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 9156954104251463899, guid: 1936951fd728caf439c2b77c8c9a4d0f,
         type: 3}
       propertyPath: mortefx

@@ -44,14 +44,7 @@ public class DanoVidaBoss : MonoBehaviour
 
    
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Bala"))
-    //        Dano(dano);
-    //    if (collision.gameObject.CompareTag("Bomba"))
-    //        Dano(danoEspecial);
-    //}
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
         if (!other.gameObject.CompareTag("Tiro Inimigo") && !other.gameObject.CompareTag("Tiro Boss"))
         {
@@ -60,8 +53,19 @@ public class DanoVidaBoss : MonoBehaviour
             if (other.gameObject.CompareTag("Bomba"))
                 Dano(danoEspecial);
         }
-        
+
     }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (!other.gameObject.CompareTag("Tiro Inimigo") && !other.gameObject.CompareTag("Tiro Boss"))
+    //    {
+    //        if (other.gameObject.CompareTag("Bala"))
+    //            Dano(dano);
+    //        if (other.gameObject.CompareTag("Bomba"))
+    //            Dano(danoEspecial);
+    //    }
+    //    
+    //}
     public void Dano(int xDmg)
     {
         vidaatual -= xDmg;

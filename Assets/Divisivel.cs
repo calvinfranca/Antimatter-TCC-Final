@@ -13,11 +13,15 @@ public class Divisivel : MonoBehaviour
     public BarraVida barravida;
     public int xp_to_give;
     public GameObject subInimigo;
+    public DelegateDano delegatedano;
 
 
 
     void Start()
     {
+        delegatedano = DelegateDano.instance;
+        delegatedano.aumentaDano += UpDano;
+
         vidaatual = vidamaxima;
         barravida.VidaMaxima(vidamaxima);
     }
@@ -34,6 +38,7 @@ public class Divisivel : MonoBehaviour
 
             Instantiate(subInimigo, transform.position + (transform.right * 3), subInimigo.transform.rotation);
             Instantiate(subInimigo, transform.position - (transform.right * 3), subInimigo.transform.rotation);
+            delegatedano.aumentaDano -= UpDano;
             Destroy(gameObject);
         };
 
