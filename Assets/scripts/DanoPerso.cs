@@ -55,7 +55,9 @@ public class DanoPerso : MonoBehaviour
             barravida.VidaMaxima(vidaatual);
             
         }
-        if (other.gameObject.CompareTag("Tiro Inimigo"))
+        if (other.gameObject.CompareTag("Tiro Inimigo") )
+            Dano(dano);
+        if (other.gameObject.CompareTag("Tiro Boss"))
             Dano(dano);
 
     }

@@ -193,12 +193,23 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6488469876801264911}
         m_MethodName: SairPause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -612,3 +623,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 509599528536851920}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6488469876801264911 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6708633824989452511, guid: 99ed5fb0c641de24083525885e024c66,
+    type: 3}
+  m_PrefabInstance: {fileID: 509599528536851920}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11000d39b32bb7429d25429ace4eadb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
