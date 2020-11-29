@@ -8,15 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 3e92684fd1fe02c43b42025be3071f7f
-  - enabled: 0
-    path: Assets/Scenes/Jogo Arqueiro.unity
-    guid: 9e97bf52f3fe4134b8144884bf6d2ad9
-  - enabled: 0
-    path: Assets/Scenes/Vitorias/Vitoria.unity
-    guid: 3c2abc990357dca4fabf115ac334661c
-  - enabled: 0
-    path: Assets/Scenes/Derrotas/Derrota.unity
-    guid: 4f4d0875f54be12408f954652ffd432d
+  - enabled: 1
+    path: Assets/Scenes/Cutscene/Arq Cutscene.unity
+    guid: 95efe3d330f502c4a84fc1554e1ab9a4
+  - enabled: 1
+    path: Assets/Scenes/Cutscene/Cav Cutscene.unity
+    guid: dcee288f9c9cace4e9cd47682fc1b56c
+  - enabled: 1
+    path: Assets/Scenes/Cutscene/Mago Cutscene.unity
+    guid: d5ae62e345651cc4ab27ec149e184634
   - enabled: 1
     path: Assets/Scenes/Vitorias/inicial/Arq Ini Vitoria.unity
     guid: 5a97b016402675945a3df760a1586c1d
@@ -50,6 +50,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cidade/Arq Cidade.unity
     guid: 660b49caa23ae51479e8d5a98bd7b2a4
+  - enabled: 0
+    path: Assets/Scenes/Jogo Arqueiro.unity
+    guid: 9e97bf52f3fe4134b8144884bf6d2ad9
+  - enabled: 0
+    path: Assets/Scenes/Vitorias/Vitoria.unity
+    guid: 3c2abc990357dca4fabf115ac334661c
+  - enabled: 0
+    path: Assets/Scenes/Derrotas/Derrota.unity
+    guid: 4f4d0875f54be12408f954652ffd432d
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
