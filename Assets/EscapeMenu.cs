@@ -9,12 +9,14 @@ public class EscapeMenu : MonoBehaviour
     public GameObject painel;
     public GameObject paineldesativar;
     private bool isPaused;
+    private bool isDoublePaused;
 
     // Start is called before the first frame update
     void Start()
     {
         painel.SetActive(false);
         isPaused = false;
+        isDoublePaused = false;
 
     }
 
@@ -27,14 +29,31 @@ public class EscapeMenu : MonoBehaviour
             {
                 isPaused = false;
                 painel.SetActive(false);
-                paineldesativar.SetActive(true);
-                Time.timeScale = 1;
+                
+                if (isDoublePaused)
+                {
+                    Time.timeScale = 0;
+                }
+                else
+                {
+                    paineldesativar.SetActive(true);
+                    Time.timeScale = 1;
+                }
+                
             }
             else
             {
                 isPaused = true;
                 painel.SetActive(true);
                 paineldesativar.SetActive(false);
+                if (Time.timeScale == 0)
+                {
+                    isDoublePaused = true;
+                }
+                else
+                {
+                    isDoublePaused = false;
+                }
                 Time.timeScale = 0;
             }
             

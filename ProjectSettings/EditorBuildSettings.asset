@@ -50,6 +50,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cidade/Arq Cidade.unity
     guid: 660b49caa23ae51479e8d5a98bd7b2a4
+  - enabled: 1
+    path: Assets/Scenes/Finais/Final Mago.unity
+    guid: d4d47a0b4885cba489704ce7da525e12
   - enabled: 0
     path: Assets/Scenes/Jogo Arqueiro.unity
     guid: 9e97bf52f3fe4134b8144884bf6d2ad9

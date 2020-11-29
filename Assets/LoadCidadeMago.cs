@@ -24,7 +24,7 @@ public class LoadCidadeMago : MonoBehaviour
         
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Mago Final");
+            SceneManager.LoadScene("Final Mago");
         }
 
     }

@@ -23,6 +23,7 @@ public class TrocaClasse : MonoBehaviour
     {
         painelTroca.SetActive(true);
         paineldesativar.SetActive(false);
+        painelUI.SetActive(false);
     }
     public void VoltarDaTroca()
     {
