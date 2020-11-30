@@ -5,7 +5,7 @@ using UnityEngine;
 public class portao : MonoBehaviour
 {
     // Start is called before the first frame update
-    public boss chefe;
+    public GameObject chefe;
     void Start()
     {
         

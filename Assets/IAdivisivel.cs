@@ -8,7 +8,7 @@ public class IAdivisivel : MonoBehaviour
     public GameObject projetil;
     public float timer = 1.0f;
     public float timer2 = 1f;
-    public float velocidade = 0.007f;
+    //public float velocidade = 0.007f;
 
 
     void Start()

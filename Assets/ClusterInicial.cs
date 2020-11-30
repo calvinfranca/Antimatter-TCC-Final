@@ -39,7 +39,8 @@ public class ClusterInicial : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnCollisionEnter(Collision collision)
+    
+    private void OnTriggerEnter(Collider collision)
     {
         if (!collision.gameObject.CompareTag("Bala") && !collision.gameObject.CompareTag("Boss"))
         {

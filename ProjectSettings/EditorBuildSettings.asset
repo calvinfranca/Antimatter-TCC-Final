@@ -5,49 +5,49 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: 3e92684fd1fe02c43b42025be3071f7f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cutscene/Arq Cutscene.unity
     guid: 95efe3d330f502c4a84fc1554e1ab9a4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cutscene/Cav Cutscene.unity
     guid: dcee288f9c9cace4e9cd47682fc1b56c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cutscene/Mago Cutscene.unity
     guid: d5ae62e345651cc4ab27ec149e184634
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Vitorias/inicial/Arq Ini Vitoria.unity
     guid: 5a97b016402675945a3df760a1586c1d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Inicial/Arqueiro Inicial.unity
     guid: ca55a458b79426844929267f4569e244
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Derrotas/Arq Ini Derrota.unity
     guid: 8c9fb4f160844db4ba4e9dbcc00732ce
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Vitorias/inicial/Mago Ini Vitoria.unity
     guid: ba7c143636554b84a99299b2153e5ee8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Inicial/Mago Inicial.unity
     guid: b94ac296a5a3fc741ab2ab86abb837b2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Derrotas/Mago Ini Derrota.unity
     guid: 2dab7fae9deef4440bede0c9d42f218e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Vitorias/inicial/Cav Ini Vitoria.unity
     guid: a8324bc5ce0ab3d49b277561d3a874ba
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Inicial/Cav Inicial.unity
     guid: 40d3ce054ab3d6d43973ffd80ce4263b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Derrotas/Cav Ini Derrota.unity
     guid: a7d5dbe6052a8d44c86a7a10ae6088d8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cidade/Mago Cidade.unity
     guid: 7a6a8090ff61dec489a90abfa95b9ee0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cidade/antiga Arq Cidade.unity
     guid: 660b49caa23ae51479e8d5a98bd7b2a4
   - enabled: 1

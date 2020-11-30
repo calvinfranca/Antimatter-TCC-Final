@@ -2741,7 +2741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27241942f665f8e4f8ef4c993f82472f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chefe: {fileID: 1046936377}
+  chefe: {fileID: 9156954105284936674}
 --- !u!64 &956553518
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2962,18 +2962,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93b6fa354a0a7ad44b12c0bf58fafd9f, type: 3}
---- !u!114 &1046936377 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9156954104251463896, guid: 1936951fd728caf439c2b77c8c9a4d0f,
-    type: 3}
-  m_PrefabInstance: {fileID: 9156954105284936673}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27cd2446a2de68f4099a97d5c31876f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1051864522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3125,7 +3113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27241942f665f8e4f8ef4c993f82472f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chefe: {fileID: 1046936377}
+  chefe: {fileID: 9156954105284936674}
 --- !u!64 &1107382739
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7666,3 +7654,9 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2598443898051581633, guid: 1936951fd728caf439c2b77c8c9a4d0f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1936951fd728caf439c2b77c8c9a4d0f, type: 3}
+--- !u!1 &9156954105284936674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6564998985846953249, guid: 1936951fd728caf439c2b77c8c9a4d0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 9156954105284936673}
+  m_PrefabAsset: {fileID: 0}
