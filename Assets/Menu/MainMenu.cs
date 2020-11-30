@@ -45,15 +45,15 @@ public class MainMenu : MonoBehaviour
     }
     public void MagoFinal()
     {
-        SceneManager.LoadScene("Mago Final");
+        SceneManager.LoadScene("Final Mago");
     }
     public void ArqFinal()
     {
-        SceneManager.LoadScene("Arq Final");
+        SceneManager.LoadScene("Final Arq");
     }
     public void CavFinal()
     {
-        SceneManager.LoadScene("Cav Final");
+        SceneManager.LoadScene("Final Cav");
     }
     public void CutsceneMago()
     {

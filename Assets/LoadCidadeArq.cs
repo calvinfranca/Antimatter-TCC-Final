@@ -1,12 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine;
 
-
-public class LoadCidadeMago : MonoBehaviour
+public class LoadCidadeArq : MonoBehaviour
 {
-   
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +19,12 @@ public class LoadCidadeMago : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        
+
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Final Mago");
+            SceneManager.LoadScene("Final Arq");
         }
 
     }
+
 }
