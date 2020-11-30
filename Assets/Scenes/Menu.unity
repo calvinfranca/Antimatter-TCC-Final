@@ -479,5 +479,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1221350819901516489, guid: ea6a08aa73dc2ea4fa1a6a62e118fc6e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CutsceneMago
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221350819976875766, guid: ea6a08aa73dc2ea4fa1a6a62e118fc6e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CutsceneArq
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221350820796930239, guid: ea6a08aa73dc2ea4fa1a6a62e118fc6e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CutsceneCav
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea6a08aa73dc2ea4fa1a6a62e118fc6e, type: 3}

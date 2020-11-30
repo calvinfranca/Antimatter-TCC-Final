@@ -55,5 +55,17 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Cav Final");
     }
+    public void CutsceneMago()
+    {
+        SceneManager.LoadScene("Mago Cutscene");
+    }
+    public void CutsceneArq()
+    {
+        SceneManager.LoadScene("Arq Cutscene");
+    }
+    public void CutsceneCav()
+    {
+        SceneManager.LoadScene("Cav Cutscene");
+    }
 
 }
