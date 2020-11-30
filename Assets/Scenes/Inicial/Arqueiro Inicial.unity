@@ -1239,7 +1239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 1411cafb8ec702541957a85180719650, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -684.4
+      value: -680.12
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 1411cafb8ec702541957a85180719650, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5482,6 +5482,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cenario total inicial
       objectReference: {fileID: 0}
+    - target: {fileID: 6757368805756219199, guid: 09f332dcf11b3894e8238ac0795253e3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -159.0806
+      objectReference: {fileID: 0}
     - target: {fileID: 6758051729399820788, guid: 09f332dcf11b3894e8238ac0795253e3,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -6365,7 +6370,7 @@ PrefabInstance:
     - target: {fileID: 5636773782014078201, guid: 5e14159f6cc79024d8e1a6d155af7d61,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -245.1
+      value: -245.72
       objectReference: {fileID: 0}
     - target: {fileID: 5636773782014078201, guid: 5e14159f6cc79024d8e1a6d155af7d61,
         type: 3}
@@ -6375,7 +6380,7 @@ PrefabInstance:
     - target: {fileID: 5636773782014078201, guid: 5e14159f6cc79024d8e1a6d155af7d61,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -668.37
+      value: -664.16
       objectReference: {fileID: 0}
     - target: {fileID: 5636773782014078201, guid: 5e14159f6cc79024d8e1a6d155af7d61,
         type: 3}
@@ -7177,7 +7182,7 @@ PrefabInstance:
     - target: {fileID: 4319144341650408823, guid: 58bd3ee44432cec48a44c2833d8d2de4,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4319144341650408823, guid: 58bd3ee44432cec48a44c2833d8d2de4,
         type: 3}
@@ -7242,7 +7247,7 @@ PrefabInstance:
     - target: {fileID: 4319144341650408823, guid: 58bd3ee44432cec48a44c2833d8d2de4,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: ExitText
+      value: LvlDano
       objectReference: {fileID: 0}
     - target: {fileID: 4319144341650408823, guid: 58bd3ee44432cec48a44c2833d8d2de4,
         type: 3}
@@ -8458,6 +8463,11 @@ PrefabInstance:
     - target: {fileID: 6564998985846953254, guid: 1936951fd728caf439c2b77c8c9a4d0f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619188431303657780, guid: 1936951fd728caf439c2b77c8c9a4d0f,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9156954104251463896, guid: 1936951fd728caf439c2b77c8c9a4d0f,
