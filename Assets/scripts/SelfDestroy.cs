@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class SelfDestroy : MonoBehaviour
 {
+
+    // Responsável por destruir os tiros dos inimigos e do player
+
+
     public float duracao;
     public GameObject anim;
     // Start is called before the first frame update

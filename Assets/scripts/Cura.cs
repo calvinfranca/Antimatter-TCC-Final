@@ -15,6 +15,9 @@ public class Cura : MonoBehaviour
     {
         
     }
+
+
+    //Quando o player passa por cima, destroi o objeto curo
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))

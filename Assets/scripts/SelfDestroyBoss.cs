@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class SelfDestroyBoss : MonoBehaviour
 {
+
+    // Responsável por destruir os tiros do boss
+
+
     // Start is called before the first frame update
     void Start()
     {

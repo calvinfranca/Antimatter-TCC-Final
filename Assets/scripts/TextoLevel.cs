@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class TextoLevel : MonoBehaviour
 {
+
+    // Responsável pelos botões, sliders e texto do canvas "level up"
+
+
     public Text txtAtual;
     public Text txtProximo;
     public Text txtParabens;
@@ -29,14 +33,14 @@ public class TextoLevel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //txtAtual.text = XpManager.level.currentLevel.ToString();
-        //txtProximo.text = (XpManager.level.currentLevel+1).ToString();
+        // Responsável pelo nível do player
         txtParabens.text = XpManager.level.currentLevel.ToString();
 
         sliderDano.value = XpManager.lvldano;
         sliderVida.value = XpManager.lvlvida;
         sliderMovSpeed.value = XpManager.lvlmovSpeed;
         
+
         if (sliderVida.value >= 5)
         {            
             btVida.interactable = false;            

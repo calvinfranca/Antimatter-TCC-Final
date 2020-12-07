@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class boss : MonoBehaviour
 {
+    // Script de controle do Boss 1
+
     public GameObject projetil;
     public GameObject sniper;
     public float timer = 1f;
@@ -26,6 +28,7 @@ public class boss : MonoBehaviour
 
     void Start()
     {
+        // Pega a referência dos ojetos vazios que servem de caminho para o Boss 1
         points = parentPoints.GetComponentsInChildren<Transform>();
 
         animator.SetBool("Attack", false);
@@ -34,27 +37,24 @@ public class boss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Controle dos timers
         if (Time.timeScale == 1)
         {
             timer -= Time.deltaTime;
             timer2 -= Time.deltaTime;
 
-
+            //Move o boss ate os objetos vazios
             transform.position = Vector3.Lerp(transform.position, points[index].position, Time.deltaTime);
+            
+            //Codigo enquanto ele está andando
             if (wandertime > 0f)
             {
                 
-
-                //transform.Translate(Vector3.forward * velocidade*Time.deltaTime);
-
-
                 wandertime -= Time.deltaTime;
                 timersnipe -= Time.deltaTime;
 
-                Quaternion rot = gameObject.transform.rotation;
-                //Vector3 pos = transform.position;
+                //Olha para o player e atira na direção dele              
                 transform.LookAt(player.transform);
-
                 if (timersnipe <= 0)
                 {
                     GameObject currentball = Instantiate(sniper, transform.position + transform.forward * 4, sniper.transform.rotation);
@@ -62,14 +62,20 @@ public class boss : MonoBehaviour
                     timersnipe = 0.4f;
                 }
                 
-                //gameObject.transform.rotation = rot;
+                //Olha de volta para o objeto vazio
                 transform.LookAt(points[index].position);
                             
             }
+
+            //Codigo enquanto não está andando
             else
             {
+
                 timeratk -= Time.deltaTime;
+           
                 animator.SetBool("Attack", true);
+
+                //reset dos timers e do animator
                 if (timeratk < 0f)
                 {
                     
@@ -81,6 +87,7 @@ public class boss : MonoBehaviour
                 
             }
 
+            //incremento do index dos Objetos vazios (a cada 1s)
             if (timer2 <= 0.0f && wandertime >= 0)
             {
                 index++;
@@ -93,6 +100,8 @@ public class boss : MonoBehaviour
                 
 
             }
+
+            //atira e roda 45 graus oito vezes (a cada 1s)
             if (timer <= 0.0f && wandertime <= 0)
             {
                 

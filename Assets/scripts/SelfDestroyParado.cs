@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class SelfDestroyParado : MonoBehaviour
 {
+
+    // Responsável por destruir os tiros do inimigo parado
+
+
     public float DistanciaTiro;
     void Start()
     {

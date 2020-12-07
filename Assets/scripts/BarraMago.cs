@@ -3,35 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-public class BarraProgresso : MonoBehaviour
+public class BarraMago : MonoBehaviour
 {
     public float max;
-    public float atual=11;
-    public float min=0;
-    
-    public Image fill;
-    
-    public Controle control;
+    public float atual = 11;
+    public float min = 0;
 
-    // Responsável por atualizar a barra radial que indica o cooldown do especial - genérico (10s)
+    public Image fill;
+
+    public ControleMago control;
+
+    // Responsável por atualizar a barra radial que indica o cooldown do especial do Mago (10s)
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
         GetCurrentFill();
     }
     void GetCurrentFill()
     {
         max = control.cooldown;
-        
+
         if (control.tempo <= 0)
         {
             atual = 10;
@@ -40,13 +39,13 @@ public class BarraProgresso : MonoBehaviour
         {
             atual = control.cooldown - control.tempo;
         }
-       
 
-      
-        
-        float fillAmount = (float)atual /(float)max;
+
+
+
+        float fillAmount = (float)atual / (float)max;
         fill.fillAmount = fillAmount;
 
-        
+
     }
 }

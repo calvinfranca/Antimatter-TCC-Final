@@ -7,6 +7,12 @@ public class DelegateDano : MonoBehaviour
     public delegate void AumentaDano();
     public AumentaDano aumentaDano;
     public static DelegateDano instance;
+    
+    
+    //Usando a instância do delegate dano para aumentar o dano que os inimigos recebem quando o player
+    //upa o dano 
+
+
     // Start is called before the first frame update
     void Awake()
     {

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class EnemyLevel : MonoBehaviour
 {
+
+    //Script obsoleto
+
+
     public DanoVida vida_script;
     public PlayerLevelSystem personagem;
     

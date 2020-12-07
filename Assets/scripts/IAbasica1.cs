@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class IAbasica1 : MonoBehaviour
 {
+    // Script obsoleto
+
+
     // Start is called before the first frame update
     public GameObject projetil;
     public float timer = 0.5f;

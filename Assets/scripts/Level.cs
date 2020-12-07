@@ -6,6 +6,10 @@ using UnityEngine;
 [System.Serializable]
 public class Level 
 {
+
+    // Responsável pela contagem de level do player 
+
+
     public int experience;
     public int currentLevel;
     public Action OnLevelUp;

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Billboard : MonoBehaviour
 {
+    // Responsável por fazer com que as barras de vida dos inimigos fiquem de frente para a tela
 
     public Transform cam;
     // Start is called before the first frame update

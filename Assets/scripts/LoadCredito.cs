@@ -1,15 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine;
 
-public class LoadScreen : MonoBehaviour
+public class LoadCredito : MonoBehaviour
 {
 
-    // Responsável pelo teleporte do player da fase inicial para a cena da vitória
-
-
-    Scene cena;
+    // Responsável pelo teleporte da fase final para os créditos
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,14 +19,13 @@ public class LoadScreen : MonoBehaviour
     {
         
     }
-
     private void OnTriggerEnter(Collider collision)
     {
-        cena = SceneManager.GetActiveScene();
+
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(cena.buildIndex - 1);
+            SceneManager.LoadScene("Credito");
         }
-        
+
     }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Dispersao : MonoBehaviour
 {
+    //Responsável por animar a explosão do especial do mago 
+
     // Start is called before the first frame update
     public float bombForce = 1000;
     public GameObject anim;

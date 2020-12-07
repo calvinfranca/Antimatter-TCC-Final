@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class portao : MonoBehaviour
 {
+
+    // Responsável por destruir os portões quando o boss morre
+
+
     // Start is called before the first frame update
     public GameObject chefe;
     void Start()

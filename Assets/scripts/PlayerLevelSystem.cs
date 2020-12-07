@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public  class PlayerLevelSystem :MonoBehaviour
 {
+    // Responsável por cuidar do xp manager
     
     public GameObject panel;
     public GameObject paneldesativar;
@@ -16,6 +17,8 @@ public  class PlayerLevelSystem :MonoBehaviour
 
     void Awake()
     {
+        // Não destroi na troca de cena
+        
         //PlayerLevelSystem.instance.vidaperso = vidaperso.UpVida();
         if (instance == null)
             instance = this;
@@ -31,6 +34,8 @@ public  class PlayerLevelSystem :MonoBehaviour
     // Start is called before the first frame update
      void Start()
     {
+
+        // Se não existe xp manager na cena, reseta o level 
         
         if (XpManager.level == null)
         {
@@ -43,6 +48,8 @@ public  class PlayerLevelSystem :MonoBehaviour
         
     }
 
+    // Quando o player sobe de level, liga o painel
+
     public void OnLevelUp()
     {
         panel.SetActive(true);
@@ -54,6 +61,8 @@ public  class PlayerLevelSystem :MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // Busca da referência do XP slider, PainelLevelUp e UI Tela
         if(slider == null)
         {
             slider = GameObject.Find("XP slider").GetComponent<Slider>();           
@@ -83,7 +92,7 @@ public  class PlayerLevelSystem :MonoBehaviour
         XpManager.level.AddExp(xp);
     }
    
-
+    // Função para o botão de "sair de texto"
     public   void ExitText()
     {
         Time.timeScale = 1;
@@ -91,6 +100,8 @@ public  class PlayerLevelSystem :MonoBehaviour
         paneldesativar.SetActive(true);
     }
 
+
+    // Funções abaixo para armazenar o level do player e linkar com o botão level Up
     public  void LvlDano()
     {
         if(XpManager.lvldano <= 5)
@@ -116,6 +127,8 @@ public  class PlayerLevelSystem :MonoBehaviour
         }
 
     }
+
+    // Atualiza a barra de XP
     public  void FillValue()
     {
         

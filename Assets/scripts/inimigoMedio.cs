@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class inimigoMedio : MonoBehaviour
 {
+
+    // Controle do tiro do inimigo Sniper
+
+
     public GameObject projetil;
     public float timer = 1f;
     public GameObject player;

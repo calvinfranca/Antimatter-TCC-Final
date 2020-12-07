@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+//script obsoleto
+
+
+
 public class ctrlArqueiro : MonoBehaviour
 {
     Vector3 playeraxis;

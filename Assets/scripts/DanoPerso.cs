@@ -8,6 +8,9 @@ using UnityEngine.SceneManagement;
 
 public class DanoPerso : MonoBehaviour
 {
+    //Responsavel pela vida do player
+
+
     // Start is called before the first frame update
     public int dano;   
     public int vidamaxima;
@@ -27,6 +30,7 @@ public class DanoPerso : MonoBehaviour
     void Update()
     {
         
+        //se vida < 0, da load na cena derrota e destroy o obj
         if (vidaatual <= 0)
         {
             cena = SceneManager.GetActiveScene();
@@ -48,27 +52,36 @@ public class DanoPerso : MonoBehaviour
     //        Dano(dano);
     //
     //}
+
+
     private void OnTriggerEnter(Collider other)
     {
+        //se passa na cura, vida restora ao maximo
         if (other.gameObject.CompareTag("Cura"))
         {
             vidaatual = vidamaxima;
             barravida.VidaMaxima(vidaatual);
             
         }
+
+        //dano recebido pelos tiros dos inimigos e boss
         if (other.gameObject.CompareTag("Tiro Inimigo") )
             Dano(dano);
         if (other.gameObject.CompareTag("Tiro Boss"))
             Dano(dano);
 
     }
+
+
     public void Dano(int xDmg)
     {
         vidaatual -= xDmg;
+
+        //Atualiza a barra de vida na UI
         barravida.SetVida(vidaatual);
     }
 
-
+    //Funcao para o botao no PanelLevelUp
     public void UpVida()
     {
 
@@ -76,6 +89,8 @@ public class DanoPerso : MonoBehaviour
         vidaatual = vidamaxima;
         barravida.SetVida(vidaatual);
     }
+
+    //Funcao para a CasaCura na cidade
     public void CasaCura()
     {
         vidaatual = vidamaxima;

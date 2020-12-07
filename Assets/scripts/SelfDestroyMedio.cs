@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class SelfDestroyMedio : MonoBehaviour
 {
+
+    // Responsável por destruir os tiros do sniper
+
+
     public float tempo;
     void Start()
     {

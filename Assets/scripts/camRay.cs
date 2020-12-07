@@ -8,6 +8,11 @@ public class camRay : MonoBehaviour
     public GameObject personagem;
     public Vector3 offset;
     public int layerMask;
+
+    //responsável pelo raycast da camera até o chao, fazendo com que a posicao do Foco seja lá. 
+    //e tambem para que a camera siga o personagem (com um offset)
+
+
     // Start is called before the first frame update
     void Start()
     {

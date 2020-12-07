@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadScreen : MonoBehaviour
+public class LoadScenes : MonoBehaviour
 {
 
-    // Responsável pelo teleporte do player da fase inicial para a cena da vitória
+    // Script obsoleto
 
 
+    public DanoPerso vida;
     Scene cena;
     // Start is called before the first frame update
     void Start()
@@ -19,16 +20,10 @@ public class LoadScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnTriggerEnter(Collider collision)
-    {
         cena = SceneManager.GetActiveScene();
-        if (collision.gameObject.CompareTag("Player"))
+        if (vida.vidaatual <=0)
         {
-            SceneManager.LoadScene(cena.buildIndex - 1);
+            SceneManager.LoadScene(cena.buildIndex+1);
         }
-        
     }
 }

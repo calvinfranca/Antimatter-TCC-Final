@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class mira : MonoBehaviour
+public class Escudo : MonoBehaviour
 {
-    // Script não utilizado
+    // Responsável por ativar o escudo do cavaleiro
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("DesativarEscudo", 5);
     }
 
     // Update is called once per frame
@@ -17,4 +17,8 @@ public class mira : MonoBehaviour
     {
         
     }
+    public void DesativarEscudo()
+    {
+        gameObject.SetActive(false);
+    } 
 }

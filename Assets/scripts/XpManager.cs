@@ -4,6 +4,10 @@ using UnityEngine;
 
 public static class XpManager
 {
+
+    // Classe estática do XP manager
+
+
     public static Level level;
     public static int lvlvida = 1;
     public static int lvldano = 1;
