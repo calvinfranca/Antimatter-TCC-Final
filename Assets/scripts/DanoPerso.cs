@@ -31,6 +31,7 @@ public class DanoPerso : MonoBehaviour
         {
             cena = SceneManager.GetActiveScene();
             SceneManager.LoadScene(cena.buildIndex + 1);
+            
             Destroy(gameObject);
             
             

@@ -24,6 +24,7 @@ public class DanoVidaBoss : MonoBehaviour
     {
         vidaatual = vidamaxima;
         barravida.VidaMaxima(vidamaxima);
+        Invoke("FindXPManager", 2f);
     }
 
     // Update is called once per frame
@@ -70,5 +71,9 @@ public class DanoVidaBoss : MonoBehaviour
     {
         vidaatual -= xDmg;
         barravida.SetVida(vidaatual);
+    }
+    public void FindXPManager()
+    {
+        player = GameObject.Find("XPManager").GetComponent<PlayerLevelSystem>();
     }
 }   

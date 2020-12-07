@@ -9,13 +9,16 @@ public class boss : MonoBehaviour
     public GameObject projetil;
     public GameObject sniper;
     public float timer = 1f;
-    public float timer2 = 1f;
+    public float timer2 = -1f;
     public float timeratk = 3f;
     public float timersnipe = 0.4f;
-    public float wandertime;
+    public float wandertime = -1f;
     public float velocidade;
     public Animator animator;
     public GameObject player;
+    public Transform[] points;
+    public GameObject parentPoints;
+    int index;
     
 
     //public GameObject rot;
@@ -23,7 +26,8 @@ public class boss : MonoBehaviour
 
     void Start()
     {
-        
+        points = parentPoints.GetComponentsInChildren<Transform>();
+
         animator.SetBool("Attack", false);
     }
 
@@ -34,11 +38,16 @@ public class boss : MonoBehaviour
         {
             timer -= Time.deltaTime;
             timer2 -= Time.deltaTime;
-            
 
-            if (wandertime > 0)
+
+            transform.position = Vector3.Lerp(transform.position, points[index].position, Time.deltaTime);
+            if (wandertime > 0f)
             {
-                transform.Translate(Vector3.forward * velocidade);
+                
+
+                //transform.Translate(Vector3.forward * velocidade*Time.deltaTime);
+
+
                 wandertime -= Time.deltaTime;
                 timersnipe -= Time.deltaTime;
 
@@ -53,32 +62,34 @@ public class boss : MonoBehaviour
                     timersnipe = 0.4f;
                 }
                 
-
-                gameObject.transform.rotation = rot;
-                //transform.LookAt(pos);
-
-
-
+                //gameObject.transform.rotation = rot;
+                transform.LookAt(points[index].position);
+                            
             }
             else
             {
                 timeratk -= Time.deltaTime;
                 animator.SetBool("Attack", true);
-                if (timeratk < 0)
+                if (timeratk < 0f)
                 {
-                    wandertime = 3.0f;
+                    
+                    wandertime = 4f;
                     timeratk = 3f;
                     animator.SetBool("Attack", false);
                 }
                 
-                //Wander();
+                
             }
 
-            if (timer2 <= 0.0f && timeratk == 3)
+            if (timer2 <= 0.0f && wandertime >= 0)
             {
-                
+                index++;
+                if (index >= points.Length)
+                {
+                    index = 0;
+                }
                 timer2 = 1f;               
-                transform.Rotate(0, 45, 0);
+                transform.Rotate(0, 90, 0);
                 
 
             }
@@ -118,8 +129,5 @@ public class boss : MonoBehaviour
         }
     }
 
-    private void Wander()
-    {
-        transform.eulerAngles = new Vector3(0, UnityEngine.Random.Range(0, 360), 0);
-    }
+    
 }

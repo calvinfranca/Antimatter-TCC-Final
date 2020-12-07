@@ -24,6 +24,8 @@ public class Divisivel : MonoBehaviour
 
         vidaatual = vidamaxima;
         barravida.VidaMaxima(vidamaxima);
+
+        Invoke("FindXPManager", 2f);
     }
 
     // Update is called once per frame
@@ -62,5 +64,9 @@ public class Divisivel : MonoBehaviour
     public void UpDano()
     {
         dano += 5;
+    }
+    public void FindXPManager()
+    {
+        player = GameObject.Find("XPManager").GetComponent<PlayerLevelSystem>();
     }
 }

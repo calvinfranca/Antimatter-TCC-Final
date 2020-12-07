@@ -67,5 +67,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Cav Cutscene");
     }
+    public void Creditos()
+    {
+        SceneManager.LoadScene("Credito");
+    }
 
 }

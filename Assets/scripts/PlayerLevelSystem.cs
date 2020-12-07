@@ -9,14 +9,14 @@ public  class PlayerLevelSystem :MonoBehaviour
     public GameObject panel;
     public GameObject paneldesativar;
     public Slider slider;
+    private DanoPerso vidaperso;
     //public Text textoXP;
-    
-    
     
     public static PlayerLevelSystem instance;
 
     void Awake()
     {
+        //PlayerLevelSystem.instance.vidaperso = vidaperso.UpVida();
         if (instance == null)
             instance = this;
         else
@@ -24,6 +24,7 @@ public  class PlayerLevelSystem :MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         DontDestroyOnLoad(gameObject);
     }
 
@@ -31,7 +32,7 @@ public  class PlayerLevelSystem :MonoBehaviour
      void Start()
     {
         
-        if(XpManager.level == null)
+        if (XpManager.level == null)
         {
             XpManager.level = new Level(1, OnLevelUp);
         }
@@ -69,6 +70,7 @@ public  class PlayerLevelSystem :MonoBehaviour
         //print(level.GetXPforLevel(level.currentLevel+1));
 
         slider.maxValue = XpManager.level.GetXPforLevel(XpManager.level.currentLevel+1);
+        slider.minValue = XpManager.level.GetXPforLevel(XpManager.level.currentLevel);
         slider.value = XpManager.level.experience;
         //print(slider.value);
         //FillValue();

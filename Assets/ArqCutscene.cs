@@ -15,7 +15,10 @@ public class ArqCutscene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene("Arqueiro Inicial");
+        }
     }
     public void LoadArq()
     {
